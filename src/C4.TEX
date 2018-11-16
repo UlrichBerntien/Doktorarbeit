@@ -1,0 +1,660 @@
+%
+%  Zusammenstellung der benutzten Diagnostiken
+%
+\beginsection{Diagnostiken}
+\label{sec:diagnostiken}
+%
+Die Diagnostik besteht überwiegend aus Meßgeräten für die
+Detektion im Bereich der weichen Röntgenstrahlung. Mit einer
+Rönt"-gen"-pin"-hole"-kame"-ra wurden zeitintegrierte Bilder
+aufgenommen. Eine Röntgenstreakkamera diente zur zeitaufgelösten
+Messung. Über ein Vielschichtspiegel-System (MLM) konnten
+wellenlängenselektiv Bilder mit einer Belichtungszeit von
+\wert{10}{ns} aufgenommen werden. Ein Kristallspektrometer
+lieferte ein Röntgenspektrum im gleichen Zeitfenster.
+\par
+Die Fusionsneutronen wurden zeitintegriert (Silberaktivierungszähler) und
+zeitaufgelöst (Szintillator mit Photomultiplier) registriert.
+\par
+Am Fokus wurde die Spannung U(t) abgegriffen und zusammen mit dem
+differenzierten Strom $\dot{\rm I}$(t) zeitaufgelöst aufgezeichnet. Für
+die zeitliche Zuordnung der zeitaufgelösten Diagnostiken wurden deren
+Monitorsignale mit aufgezeichnet. Zur Aufzeichnung aller elektrischen
+Meßsignale dienten zwei digitale Speicheroszilloskope Gould 4074.
+\par
+Keine der Diagnostiken wurde bei den Experimenten neu in Betrieb
+genommen. Es sind die bereits in den vorhergehenden Arbeiten
+\cite{maelzig:phd,roewe:phd} beschriebenen Geräte. Zur vollständigen
+Beschreibung der Laborumgebung ist dieses Kapitel \thesection\ aber
+notwendig. Die/Der informierte Leserin/Leser kann dieses Kapitel
+\thesection\  überspringen, oder sich anhand der maßstabsgetreuen
+Zeichnungen einen Überblick verschaffen. Die Zeichnungen sind nicht
+immer optimal für die Darstellung der Diagnostik, aber durch ihre
+Maßstabstreue geben sie einen Eindruck von der experimentellen
+Situation. Schematische Zeichnungen zum Funktionsprinzip der
+Diagnostiken sind in vielen Quellen z.B. in
+\cite{roewe:phd,maelzig:phd} zu finden.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C4-02}}
+  \caption{Ausrichtung der Diagnostiken. In der Mitte die durchbohrte Anode,
+  umgeben von den Kathodenstäben. (Details vereinfacht)}
+  \label{fig:Richtung:Diagnostiken}
+\end{figure}
+%
+\par
+Die Abbildung \vref{fig:Richtung:Diagnostiken} zeigt die Ausrichtung
+der Diagnostiken auf den Plasmafokus. Die Bohrung in der Anode wird bei
+den Entladungen durch die hohe Belastung verändert. Über die Einnordung
+der Zeichnung, kann die leichte Asymmetrie der vergrößerten Bohrung in
+Bezug zu den Diagnostiken gebracht werden. (vgl. Abbildung
+\vref{fig:bohrung}).
+%
+\beginsubsection{Elektrische Diagnostiken}
+%
+Der Abgriff für das Spannungssignal und die Lage der Pickup-Spule für
+das $\rm\dot{I}$ sind in der Abbildung \vref{fig:Richtung:Diagnostiken}
+eingezeichnet.
+\par
+Der Spannungsabgriff erfolgt am Hauptkollektor. Durch die
+Kollektorkapazität werden sehr schnelle Spannungsänderungen im
+Fokus-Bereich gedämpft, daher wird typisch nur $1/3$ der Pinchspannung
+gemessen \cite{stein:staat}. Die Spannung wird über einen kapazitiven
+Teiler (1:7100) und einen ohmschen Teiler (1:10) für das DSO reduziert.
+\par
+Die Pickup-Spule ist in den Kupferflansch der Kathode eingebettet, sie
+liefert das $\rm\dot{I}$-Signal. Gemessen wird der gesamte Strom im
+Fokus, der Pinchstrom wird nicht getrennt gemessen.
+%
+\beginsubsection{Neutronendiagnostik}
+\label{sec:neutronendiagnostik}
+%
+Bei einer effizienten Pinchbildung kommt es zur Bildung von
+Fusionsneutronen. Die Anzahl der entstandenen Neutronen, bei einer
+Entladung, gibt sofort einen Eindruck über den Zustand des Experiments,
+insbesondere über die Konditionierung des Isolators. Bei dieser
+Bewertung ist auch die Injektionsgasmenge und die Bankenergie zu
+beachten. Die Fusionsneutronen können über zwei verschiedene
+Reaktionswege enstehen \cite{dtv:70}, wobei, in der Situation der
+Fokusentladung, der Reaktionsweg über das Tritium vernachlässigbar ist:
+\par
+\begin{tabular}{rl}
+  ${2 \atop 1}{\rm D} \ +\ {2 \atop 1}{\rm D} \longrightarrow
+  $&${3 \atop 2}{\rm He}\ (0.8 {\rm\ MeV}) \ +\ \rm n\ (2.5 {\rm\ MeV}) $\\[1.5mm]
+
+  ${2 \atop 1}{\rm D} \ +\ {2 \atop 1}{\rm D} \longrightarrow
+  $&${3 \atop 1}{\rm T}\ (1.0 {\rm\ MeV}) \ +\ \rm p\ (3.0 {\rm\ MeV}) $\\[1.5mm]
+
+  &${3 \atop 1}{\rm T} \ +\ {2 \atop 1}{\rm D} \ \longrightarrow \
+  {4 \atop 2}{\rm He}\ (3.5 {\rm\ MeV}) \ +\ \rm n\ (14 {\rm\ MeV}) $\\[1.5mm]
+\end{tabular}
+\par
+Eingesetzt wurden zur Detektion der Neutronen zwei Silberaktivierungszähler und
+eine Szintillator-Photomultiplier Kombination.
+\par
+Die Silberaktivierungszähler\footnote{Firma Herfuth GmbH,
+    Typ H 1359 A-K.
+    Herfurth ist in die Rados Technology GmbH, Hamburg aufgegangen
+    (\url{http://www.rados.de/}).}
+bestehen aus einer Silberplatte und einem
+Geiger-Müller-Zählrohr\cite{steinmetz:80}. Die Neutronen aktivieren die Silberatome:
+\par
+$\begin{array}{rcl}
+  {109 \atop \hfill 47}{\rm Ag} \ +\ \rm n \ \longrightarrow \
+  &{110 \atop \hfill 47}{\rm Ag}& \ +\ \gamma \\[1.5mm]
+
+  &{110 \atop \hfill 47}{\rm Ag}& \ \longrightarrow \
+  {110 \atop \hfill 48}{\rm Cd}
+  \ +\ \beta^- \ (2.8 {\rm\  MeV}) \ +\ \bar\nu_e \\[1.5mm]
+
+  \rm {107 \atop \hfill 47}{\rm Ag} \ +\ {\rm n} \ \longrightarrow \
+  &{108 \atop \hfill 47}{\rm Ag}& \ +\ \gamma \\[1.5mm]
+
+  &{108 \atop \hfill 47}{\rm Ag}& \ \longrightarrow \
+  {108 \atop \hfill 48}{\rm Cd}
+  \ +\ \beta^- \ (1.8 {\rm\ MeV}). \ +\ \bar\nu_e \\[1.5mm]
+\end{array}$
+\par
+Die $\beta$-Strahlung, beim Zerfall der angeregten Silberatome, wird
+mit dem Zählrohr im Proportionalzählbereich gemessen. Die Zählpulse
+werden mit zwei Digitalzählern (Universal counter 5316A, Hewlett
+Packard) über einen Zeitraum von \wert{10}{s} nach einer Entladung
+gezählt. Die beiden Silberaktivierungszähler stehen in einem Abstand
+von \wert{2.5}{m} bzw. \wert{9}{m} zum Fokus.
+\par
+Die Neutronen wurden zusätzlich zeitaufgelöst registriert. Dazu
+wurde die Kombination eines schnellen Szintillators (NE 111,
+Zylinder \wert{r = 2.5}{cm}, \wert{d = 1.2}{cm}) vor einem
+Photomultiplier (Typ R 12944-01 von Hamamatsu Photonics,
+Herrsching, \url{http://www.hamamatsu.com/}) benutzt. Diese
+Kombination ermöglicht eine Zeitauflösung von etwa \wert{1}{ns}
+\cite{kies:phd}, aber die verwendeten DSO haben nur eine
+Zeitauflösung von \wert{2.5}{ns}.
+\par
+Der Aufbau dieses Detektors an SPEED~2 ist in der Abbildung
+\vref{fig:Photomultiplier} dargestellt.
+\par
+Die Abschirmung aus Bleikacheln verhindert fast vollständig die Störung
+der Neutronenmessung durch Röntgenstrahlung, für die der
+Photomultiplier ebenfalls empfindlich ist. Bei einer Neutronenenergie
+von \wert{1}{MeV} beträgt die Halbwertsdicke von Blei \wert{6}{cm}, für
+Röntgenstrahlung beträgt die Halbwertsdicke nur \wert{1}{cm} bei der
+gleichen Energien \cite{dtv:70}. Zu kleineren Energien wird das
+Verhältnis noch günstiger. Die Metallabschirmung dient zum Schutz vor
+sichtbarem Licht und zur elektromagnetischen Abschirmung.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C4-03}}
+  \caption{Aufbau Szintillator-Photomultiplier Kombination.
+   (maßstabsgetreu, Details vereinfacht)}
+  \label{fig:Photomultiplier}
+\end{figure}
+%
+\par
+Der Photomultiplier wurde mit einer Spannung von \wert{2.5}{kV} betrieben
+und sein Ausgangssignal auf einem DSO aufgezeichnet.
+\par
+Der Abstand zum Fokus ist in der Zeichung mit \wert{1.0}{m} angegeben.
+Wenn es die Anordnung zugelassen hat, wurde auch mit einem Abstand von
+\wert{0.75}{m} gearbeitet. Die emittierten Neutronen zeigen eine
+typische Energieverteilung \cite{steinmetz:80} von \wert{1}{MeV} bis
+\wert{3}{MeV} und damit eine entsprechende Geschwindigkeitsverteilung.
+Ein geringer Abstand zur Quelle ist daher für die zeitaufgelöste
+Bestimmung der Neutronenproduktion wichtig.
+\par
+Ein nicht bei dieser Arbeit verwendete Verfahren erlaubt, aus den
+Signalen von mehreren Szintillator-Photomultiplier-Kombinationen in
+verschiedenen Abständen das Energiespektrum zeitlich aufgelöst zu
+bestimmen \cite{tiseanu:96}.
+%
+\beginsubsection{Röntgenpinholekamera}
+\label{pinholekamera}
+%
+Die Rönt"-gen"-pin"-hole"-kame"-ra ist die wichtigste
+Rönt"-gen"-dia"-gnos"-tik bei diesem Experiment. Aufgrund der
+einfachen Handhabung und des einfachen Aufbaus, ist diese Kamera
+auch die zu"-ver"-läs"-sig"-ste Rönt"-gen"-dia"-gnos"-tik.
+\par
+Das Arbeitsprinzip der optischen Lochkamera läßt sich sofort auf
+die Rönt"-gen"-pin"-hole"-kame"-ra über"-tra"-gen. Als
+Wandmaterial für das Loch wurde Kupfer, Eisen oder Molybdän
+benutzt. In Kupferfolie lassen sich die Löcher mit einer Nadel
+stechen; in Eisen können Löcher gebohrt werden. Molybdän-Blenden
+werden für den Einsatz in Elektronenmikroskopen kommerziell
+gefertigt.
+\par
+Die Lichtschwäche der Pinhole-Abbildung stört bei diesen Experimenten
+nicht, weil die Röntgenstrahlung des Plasmas sehr intensiv ist. Es
+wurden Pinholes bis zu einem minimalen Durchmesser von
+\wert{20}{$\mu$m} benutzt. Beugungseffekte sind durch die kurze
+Wellenlänge des Röntgenlichts (Bereich unter \wert{5}{nm}) nicht
+störend.
+\par
+Die Rönt"-gen"-pin"-hole"-kame"-ra liefert ein zeitintegriertes
+Bild über die gesamte Entladung. So entfallen alle
+Synchronisationsprobleme mit der Entladung. Dennoch zeigt die
+Aufnahme nur ein kurzes Zeitfenster der Entladung, weil über
+geeignete Filter nur Röntgenstrahlung aus der heißen Pinchsäule
+den Film erreichen kann. Die einlaufenden Schichten, vor der
+Kompression, sind auf den Aufnahmen nicht zu sehen.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C4-06}}
+  \caption{Aufbau der Rönt"-gen"-pin"-hole"-kame"-ra (maßstabsgetreu, Details vereinfacht)}
+  \label{fig:Pinholekamera}
+\end{figure}
+\par
+%
+Durch einen Transmissionsfilter hinter dem Pinhole wird der
+beobachtete Wel"-len"-län"-gen"-be"-reich in Richtung langer
+Wellenlängen abgeschnitten. In Richtung kurzer Wellenlängen
+begrenzt der Detektor (Röntgenfilm) den beobachtbaren Bereich. Die
+Transmissionskurven der Filter sind im Abschnitt
+\vref{sec:Transmissionsfilter} für alle Diagnostiken
+zusammengefaßt.
+\par
+Die Abbildung \vref{fig:Pinholekamera} zeigt den Aufbau der Kamera
+an dem SPEED~2 Experiment. Die Abstände Fokus -- Pinhole, Pinhole
+-- Film sind aus den benutzten Einstellungen beispielhaft
+ausgewählt.
+\par
+Bei entsprechender Verkleinerung ist es möglich, nicht nur ein
+Bild mit Hilfe eines Pinholes aufzunehmen. Die
+Rönt"-gen"-pin"-hole"-kame"-ra wurde mit Doppelpinholes
+(Durchmesser \wert{100}{$\mu$m}) und Vierfachpinholes (Durchmesser
+\wert{150}{$\mu$m}, eines \wert{20}{$\mu$m}), versehen mit
+verschiedenen Filtern, benutzt. Über die unterschiedlichen Filter
+werden Bereiche der Pinchsäule entsprechend der Wellenlänge ihrer
+Röntgenemission unterscheidbar.
+\par
+Zur Aufzeichnung wurde der Röntgenfilm Kodak DEF-5 (direct
+exposure film) benutzt und mit dem Röntgenfilmentwickler Kodak
+LX~24 entwickelt. Der Film ist identisch in seinen Eigenschaften
+dem Kodak DEF-2. (Laut eines Kodak Mitarbeiters, bezeichnet die
+Nummer nur die Verpackung. Der DEF-2 bzw. DEF-II ist im Handel
+nicht mehr erhältlich.)
+%
+\beginsubsection{Transmissionsfilter}
+\label{sec:Transmissionsfilter}
+%
+Es wurden verschiedene Transmissionsfilter bei der
+Rönt"-gen"-pin"-hole"-kame"-ra und der Röntgenstreakkamera
+eingesetzt. Durch die Wahl der Filter wird die registrierte
+Wellenlänge mitbestimmt.
+\par
+Die kurzwellige Grenze ist durch den benutzten Detektor bestimmt. Die
+langwellige Grenze wird durch den Filter festgelegt. Bei den
+Diagnostiken wurden dünne Metallfolien als Filter benutzt.
+\par
+Transmissionskurven von verschiedenen Festkörpern und Gasen werden
+vom Center for X-Ray Optics, Material Science Division, E.O.
+Lawrence Berkeley National Lab, zur Verfügung gestellt. Die Kurven
+und Daten können über \url{http://www-cxro.lbl.gov/} abgerufen
+werden. Nützlich dabei ist die Formel: $\lambda / \rm nm = 1239.5
+/ (\rm E/eV)$.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C4-07A}}
+  \caption{Transmissionskurven von \wert{10}{$\mu$m}, \wert{135}{$\mu$m}
+    und \wert{500}{$\mu$m} dicken Berylliumfolien}
+  \label{fig:Filter:A}
+\end{figure}
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C4-07B}}
+  \caption{Transmissionskurven von \wert{0.5}{$\mu$m} Kupferfolie
+     und einer Kombination aus \wert{10}{$\mu$m} Be mit \wert{0.5}{$\mu$m} Cu}
+  \label{fig:Filter:B}
+\end{figure}
+%
+\par
+Das Verhalten der Filter läßt sich im wesentlichen durch die Lage der
+Absorptionskante beschreiben. Bei der Diskussion der Meßergebnisse wird
+immer die Wellenlänge bei 5\% Transmission angegeben. Die Wahl des 5\%
+Punktes ist willkürlich. Je nach Intensität der Röntgenstrahlung und
+Empfindlichkeit des Detektors, kann auch Strahlung oberhalb der Grenze
+sichtbar werden. Daher wird bei den Meßergebnissen das Filtermaterial
+und diese Wellenlängengrenze angegeben.
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|c|c|}
+  \hline
+     Filter                 & Wellenlängengrenze \\
+  \hline
+     \wert{500}{$\mu$m} Be  & \wert{\lambda < 0.5}{nm} \\
+     \wert{135}{$\mu$m} Be  & \wert{\lambda < 0.8}{nm} \\
+     \wert{10}{$\mu$m} Be   & \wert{\lambda < 2.0}{nm} \\
+     \wert{10}{$\mu$m} Be + \wert{0.5}{$\mu$m} Cu & \wert{\lambda < 2.0}{nm} \\
+  \hline
+  \end{tabular}
+  \caption{Transmissonsbereiche der benutzten Filter}
+  \label{tab:Filtergrenzen}
+\end{table}
+%
+\beginsubsection{Röntgenstreakkamera}
+\label{sec:streakkamera}
+%
+Zur zeitaufgelösten Untersuchung der Röntgenquelle wurde eine
+Rönt"-gen"-streak"-kame"-ra vom Typ \glqq Low magnification x-ray
+streak camera\grqq\ der Firma Kentech Instruments
+Ltd.\footnote{\url{http://www.kentech.co.uk/}} (England) benutzt.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C4-05}}
+  \caption{Interner Aufbau der Röntgenstreakkamera (schematisch) \cite{kentech:93}}
+  \label{fig:Streakkamera:intern}
+\end{figure}
+%
+\par
+Die Arbeitsweise der Röntgenstreakkamera läßt sich an ihrem internen
+Aufbau, in Abbildung \vref{fig:Streakkamera:intern}, erläutern. Das
+Elektrodensystem ist bis auf die Ablenkplatten rotationssymmetrisch.
+\par
+Die Kathode der Streakkamera ist auswechselbar. Bei den Messungen für
+diese Arbeit wurde eine low-density CsJ-Kathode benutzt. Diese Kathode
+besteht aus schaumartigem Cäsiumjodid auf einer \wert{6}{$\mu$m} dicken
+Mylar-Folie. Dieses Material erreicht eine besonders hohe
+Quantenausbeute (= Anzahl Elektronen pro Anzahl Photonen), die in der
+Abbildung \vref{fig:Streakkamera:Ausbeute} als Funktion der Wellenlänge
+der Röntgenphotonen dargestellt ist.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C4-08}}
+  \caption{Quantenausbeute (Elektronen/Photon) für die Photokathode
+     (\wert{102}{nm} CsJ auf \wert{6}{$\mu$m} Mylar) der Streakkamera
+     \cite{roewe:phd}}
+  \label{fig:Streakkamera:Ausbeute}
+\end{figure}
+%
+\par
+Nachdem die auftreffenden Röntgenphotonen in der Kathode, entsprechend
+der Quantenausbeute, Elektronen ausgelöst haben, werden diese durch das
+elektrische Feld beschleunigt. Die Anordnung der Elektroden in der
+Kamera bildet eine Elektronenoptik, die das Röntgenbild von der
+Kathode, leicht vergrößert, auf den Phosphorschirm abbildet.
+\par
+Durch die Ablenkplatten kann das Bild auf dem Phosphorschirm
+verschoben werden. Eine Schlitz vor der Kathode begrenzt das Bild
+auf einen schmalen Streifen (typisch \wert{0.5}{mm} x
+\wert{3}{cm}). Durch einen Spannungspuls, mit einem linearen
+Bereich im Anstieg, auf die Ablenkplatten erhält man ein
+Schmierbild dieses Streifens. Die Ablenkgeschwindigkeit kann bei
+der vorhandenen Kamera in sechs Stufen von \wert{1.3}{ns/mm} bis
+\wert{11}{ps/mm} eingestellt werden. Zur Untersuchung des stabilen
+Säu"-len"-mo"-dus (SCM) wurde immer nur die langsamste Einstellung
+benutzt, weil die Lebensdauer der Säule mit bis zu \wert{100}{ns}
+relativ groß ist.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C4-04}}
+  \caption{Aufbau der Röntgenstreakkamera (maßstabsgetreu, Details vereinfacht)}
+  \label{fig:Streakkamera}
+\end{figure}
+%
+\par
+Die Breite des Streifens bestimmt die zeitliche Auflösung. Bei den
+Untersuchungen an der Plasmasäule ist die Quelle bereits sehr
+schmal, ein enger Spalt kann bei Streaks senkrecht zur Säule
+entfallen. Dieses vereinfacht die Justierung der Kamera am
+Experiment. Die Abbildung \vref{fig:Streakkamera} zeigt den Aufbau
+der Kamera am Experiment. Die Streakkamera ist von dem Rezipienten
+elektrisch isoliert und in einem Faraday-Käfig aufgebaut.
+\par
+Die Streakkamera ist mit einem Vakuumpumpensystem verbunden, damit der
+maximale Betriebsdruck von \ewert{1}{-2}{Pa} nicht überschritten wird.
+Der Filter zwischen Entladungskammer (\wert{> 100}{Pa}) und
+Streakkamera muß aus diesem Grund ebenfalls vakuumdicht sein. Bei zu
+hohen Drücken kommt es zu einer Entladung zwischen der Photokathode und
+dem Gitter in der Kamera (vgl. Abbildung
+\vref{fig:Streakkamera:intern}).
+\par
+Zur Justierung der Kamera wurde ein Justierlaser benutzt, der die
+optische Achse für die Pinhole-Abbildung und die Streakkamera vorgab.
+So konnte vom Rezipient aus, in Richtung des Justierlasers, der Aufbau
+schrittweise auf die Achse ausgerichtet werden.
+\par
+Durch eine Pinhole-Abbildung wird das strahlende Plasma auf die
+Photokathode der Kamera abgebildet. Der Schlitz der Streakkamera kann
+parallel zur Pinchsäule liegen, dann wird das zeitliche Verhalten des
+Plasmas auf der Achse sichtbar. Wird der Schlitz der Streakkamera
+senkrecht zur Pinchsäule angeordnet, dann wird die zeitliche
+Entwicklung des Pinchradius bei einer bestimmten Höhe sichtbar.
+Alternativ können in dieser Anordnung auch zwei Bilder des Plasmas über
+zwei Pinholes auf die Photokathode abgebildet werden. So wird die
+Entwicklung des Radius bei zwei verschiedenen Höhen oder in zwei
+verschiedenen Wellenlängenbereichen gleichzeitig aufgezeichnet.
+\par
+Benutzt wurde ein rundes Pinhole mit einem Durchmesser von
+\wert{300}{$\mu$m} oder zwei runde Pinholes mit je einem
+Durchmesser von \wert{250}{$\mu$m}. Über den Filter hinter dem
+Pinhole kann der gewünschte Wel"-len"-län"-gen"-be"-reich, der zu
+messenden Röntgenstrahlung, bestimmt werden.
+\par
+An die Streakkamera ist ein Bildverstärker (intern eine MCP) montiert
+(Typ \glqq 50/40 Image intensifier for a Kentech x-ray streak
+camera\grqq\  der Firma Kentech). Die MCP wurde \wert{1}{$\mu$s} vor
+der Streakkamera ausgelöst, damit sich die Spannung an der MCP aufbauen
+konnte. Da die Streakkamera mit einer fallenden Flanke und der
+Bildverstärker mit einer steigenden Flanke getriggert wird, ist nur ein
+\wert{1}{$\mu$s} langer Rechteckpuls für beide Geräte erforderlich. Die
+genau Länge des Pulses muß eingehalten werden, weil erst am Ende die
+Streakkamera ausgelöst wird. Benutzt wurde dafür ein analoger
+Pulsgenerator ({\bf HP}, siehe Abbildung \vref{fig:triggerung}), der
+einen kleinen Jitter zeigt, wenn sich der Regler für die Pulslänge am
+Anschlag befindet.
+\par
+Aufgezeichnet wurden die Bilder mit einem schwarz/weiß Sofortbildfilm,
+Typ 667 von Polaroid (\url{http://www.polaroid.de/}). So konnte nach
+jeder Entladung sofort die zeitliche Einstellung und die Justierung der
+Kamera überprüft werden. Für die Justierung ist die Arbeitsweise ohne
+zeitliche Ablenkung, also mit ausgeschalteter Sweep-Elektronik, sehr
+hilfreich.
+\par
+Die Bilder wurden dann mit einem \wert{300}{dpi} Schwarz/weiß-Scanner
+eingelesen. Eine höhere Auflösung ist nicht notwendig, weil die
+Auflösung des Polaroid-Bilder bei \wert{12-14}{Linien/mm} liegen
+(Herstellerangabe). Höher auflösende Polaroid-Filme (z.B. Typ 665,
+Negativ \wert{160-180}{Linien/mm}) konnten nicht benutzt werden, weil
+die Empfindlichkeit (ISO 80 gegen ISO 3000) nicht ausreichte.
+\par
+\label{streaknachbearbeitung} Einige Streakbilder zeigen das, aus
+anderen Arbeiten \cite{maelzig:phd,roewe:phd} schon bekannte, Artefakt.
+Es entsteht durch Röntgenstrahlung, die den Phosphorschirm erreicht.
+Dieses ist genau dann möglich, wenn eine Sichtlinie vom Phosphorschirm
+durch die Kamera und das Pinhole auf die Plasmasäule besteht. Also
+nicht bei den Bildern die mit zwei Pinholes erstellt wurden.
+\par
+Die Abbildung \vref{fig:bildbearbeitung} zeigt, wie in dieser Arbeit
+der störende Fleck mit einem Grafikprogramm entfernt wurde. Mit der
+Radierfunktion des Programms wurden die Grauwerte solange reduziert,
+bis sich ein kontinuierlicher, sinnvoller Bildinhalt ergab.
+\par
+Auf den nachbearbeiteten Bildern läßt sich das Wesentliche schneller
+erkennen. Im Zentrum weisen sie natürlich Ungenauigkeiten durch die
+Nachbearbeitung auf. Wie das Differenzbild zwischen dem Original und
+dem bearbeiteten Bild zeigt, wurde im Artefakt die Sättigung des
+Scanners oder des Kamerasystems erreicht. Das Subtrahieren eines
+Nullbilds (d.h. Bild nur mit Artefakt) würde daher nicht zum
+gewünschten Effekt führen. Die Ungenauigkeiten im Zentrum des Bildes
+werden hingenommen, um einen leicht interpretierbaren Eindruck zu
+erreichen.
+\par
+Eine weitere Ungenauigkeit ist gegeben durch eine leichte Verzerrung im
+Bildverstärker. Der Hersteller gibt dazu die Beziehung $r' = 0.0002128
+{\rm mm}^{-2} \cdot r^3 + 0.667 \cdot r$ mit $r, r'$ = radiale Position
+auf der Eintritts- bzw Austrittsseite an. Diese Verzerrung wurde in den
+Abbildungen nicht korrigiert. In den Randbereichen wird der Fehler
+maximal, dort beträgt der relative Fehler 11\%.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C4-01}}
+  \caption{Nachbearbeitung bei Bildern der Streakkamera, die ein Artefakt zeigen}
+  \label{fig:bildbearbeitung}
+\end{figure}
+%
+\beginsubsection{Mikrokanalplatte (MCP)}
+%
+Die Mikrokanalplatte (MCP für englisch microchannel plate) wird zur
+Bildverstärkung und/oder zur Kurzzeitbelichtung verwendet. Verschiedene
+Typen wurden bei den Messungen in Kombination mit der
+Röntgenstreakkamera, dem Kristallspektrometer und dem MLM-System
+eingesetzt.
+\par
+Eine MCP \cite{wiza:79} besteht aus einer Vielzahl von einzelnen
+Kanälen in einer Glasplatte. Die Kanäle besitzen einen Durchmesser im
+Bereich \wert{10-100}{$\mu$m} und sind \wert{0.1-4.0}{mm} lang. Der
+Durchmesser und damit der Abstand der Kanäle, ist eine Grenze für das
+Auflösungsvermögen einer MCP.
+\par
+Die Abbildung \vref{fig:MCP:Kanal} zeigt die Arbeitsweise eines
+Kanals. Ein Photon trifft auf die Photokathode und löst dort ein
+Elektron aus (entsprechend der Quanteneffizienz der Photokathode).
+Die langwellige Grenze der Empfindlichkeit liegt bei \wert{\lambda
+< 120}{nm} und kann durch Beschichtung mit CsJ auf \wert{\lambda <
+200}{nm} erweitert werden \cite{martin:82}. Die Messung von
+Schmitz \cite{schmitz:diplom} haben gezeigt, daß die sichtbaren
+Strukturen auf den MCP-Bildern überwiegend aus dem
+Wel"-len"-län"-gen"-be"-reich \wert{\lambda < 20}{nm} stammen. Das
+Elektron wird durch das elektrische Feld im Inneren des Kanals
+beschleunigt. Beim Auftreffen auf die Wand werden
+Sekundärelektronen erzeugt. Jeder Kanal stellt eine Art
+kontinuierliches Dynodensystem eines Photomultipliers dar. Auf der
+Austrittsseite werden die Elektronen durch einen Phosphorschirm
+wieder in Photonen umgesetzt.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C4-10}}
+  \caption{Elektronenlawine in einem Kanal der MCP}
+  \label{fig:MCP:Kanal}
+\end{figure}
+%
+\par
+Aus diesen einzelnen Kanälen setzt sich die gesamte MCP zusammen, wie
+die Abbildung \vref{fig:MCP:Schema} zeigt. Die Kathodenseite der MCP
+ist leitfähig mit allen Kanälen verbunden, damit die Elektronen ersetzt
+werden können. Die Anode ist, je nach Typ der MCP, als Schicht auf dem
+Glassubstrat oder separat auf dem Phosphorschirm angebracht. In dem
+dann entstehenden Raum zwischen Glasplatte und Anode werden alle
+Elektronen, auch die nahe an der Austrittsfläche ausgelösten,
+zusätzlich beschleunigt.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C4-09}}
+  \caption{Schematischer Aufbau der MCP}
+  \label{fig:MCP:Schema}
+\end{figure}
+%
+\par
+Hinter dem Phosphorschirm ist üblicherweise eine Fiberoptik, die das
+Licht auf einen Film überträgt. Systeme mit angeschlossenem CCD-Chip
+wurden hier nicht eingesetzt.
+\par
+Die Spannung an der MCP kann gepulst werden, dann wird neben der
+Verstärkung auch eine Zeitauflösung erreicht.
+\par
+Beim Betrieb mit dem MLM-System und dem Kristallspektrometer wurde
+diese Möglichkeit ausgenutzt. Pro Entladung konnte so ein Bild bzw. ein
+Spektrum mit einer Belichtungszeit von \wert{10}{ns} aufgenommen
+werden.
+%
+\beginsubsection{Kristallspektrometer}
+\label{sec:kristallspektrometer}
+%
+Das Kristallspektrometer wurde von Sidelnikov (Institut für
+Spektroskopie, Troitzk) am SPEED~2 Experiment betrieben. Als erfahrener
+Spektroskopiker hat er auch die Auswertung der gewonnenen Spektren
+durchgeführt.
+\par
+Das benutzte Spektrometer arbeitet mit einem KAP Kristall. Dieser
+Kristall ist ein organischer Einkristall, chemische Formel: $\rm
+C_6H_4(COOH)(COOK)$, mit einer Gitterkonstanten von \wert{2d =
+2.26}{nm}. Die nutzbare Fläche (100-Ebene) des Kristalls beträgt
+\wert{3}{cm} \wert{\cdot\ 1}{cm}.
+\par
+Der Kristall wird in Johann-Anordnung \cite{johann:31} benutzt.
+Der Bragg-Winkel $2{\rm d} \cdot \sin(\varphi) = {\rm n} \cdot
+\lambda$, n = 1 wurde auf $22^\circ$, entsprechend einer
+Wellenlängen um \wert{\lambda = 1.0}{nm}, eingestellt. Der
+beobachtbare Wel"-len"-län"-gen"-be"-reich beträgt bei diesem
+Spektrometer \wert{0.16}{nm}.
+\par
+Der Aufbau des Spektrometers am SPEED~2 gibt schematisch die Abbildung
+\vref{fig:Kristallspektrometer} wieder.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C4-12}}
+  \caption{Maßstabsgetreue Darstellung des Kristallspektrometers am SPEED~2.
+     Details, das Gehäuse und der Faraday-Käfig sind vernachlässigt.}
+  \label{fig:Kristallspektrometer}
+\end{figure}
+%
+\par
+Durch einen \wert{0.2}{mm} Spalt, der in der Ebene des Rowland-Kreises
+liegt, wird eine räumliche Auflösung erzielt. Ähnlich der Anordnung der
+Röntgenstreakkamera, gibt es hier wieder zwei Möglichkeiten der
+Beobachtung. Die Pinchsäule kann mit einer z-Auflösung, längs ihrer
+Achse, oder mit einer radialen Auflösung beobachtet werden. Dazu muß
+das komplette Spektrometer mit dem Spalt um $90^\circ$ gedreht werden.
+Für die beiden Fälle ergibt sich eine unterschiedliche Auflösung
+aufgrund der unterschiedlichen Ausleuchtung der Kristallfläche: Bei
+z-Auflösung \ewert{\Delta\lambda = 5.0}{-4}{nm} und bei radialer
+Auflösung \ewert{\Delta\lambda = 6.6}{-4}{nm}.
+\par
+Das Spektrum wurde mit einer MCP aufgenommen. Von einem entsprechenden
+Spannungspuls gesteuert, betrug die Belichtungszeit \wert{10}{ns}. Über
+einen Spannungsabgriff wurde ein Monitorsignal zur zeitlichen Zuordnung
+des Spektrums aufgenommen. Mit der MCP wurde dann ein
+\wert{120}{mm}-Rollfilm Agfa (\url{http://www.agfa.com/}) APX 400
+(Empfindlichkeit ISO 400, schwarz/weiß) belichtet.
+%
+\beginsubsection{Vielschichtspiegel-System (MLM)}
+\label{sec:mlm}
+%
+Das Vielschichtspiegel-System (MLM für englisch multilayer mirror)
+wurden von Simanovskii (A.-F.-Ioffe-Institut, St. Petersburg) am
+SPEED~2 Experiment aufgebaut \cite{bobashev:97}.
+\par
+Die Vielschichtspiegel bestehen aus 50 bis 100 Atomlagen W/Sc auf
+einem \wert{0.5}{mm} \wert{\cdot\ 20}{mm} \wert{\cdot 50}{mm}
+Siliziumsubstrat. Durch den Wechsel zwischen Wolfram und Scandium
+entstehen Schichten mit unterschiedlichem Brechungsindex. Die
+Absorption bei weicher Röntgenstrahlung (\wert{1.21-1.35}{nm}) ist
+klein genug, daß die Strahlung die Schichten durchdringen kann. Na
+jeder Schichtgrenze wird ein Teil der Strahlung reflektiert. Es
+kommt zu Interferenzeffekten zwischen den reflektierten Wellen,
+die u.a. vom Winkel der einfallenden Strahlen zum Spiegel abhängig
+sind (Bragg-Reflexion). Für den genutzten
+Wel"-len"-län"-gen"-be"-reich liegt der Winkel für eine
+konstruktive Interferenz im Bereich 31 - 35$^o$. Die Reflektivität
+beträgt dabei 0.7\% für einen Spiegel.
+\par
+Eine Abbildung wird erreicht durch Krümmung der ursprünglich
+ebenen Spiegel. Die Anordnung der beiden MLMs und der
+resultierende Strahlengang ist in der Abbildung \vref{fig:MLM}
+schematisch dargestellt. Der Abstand zwischen den Spiegeln beträgt
+\wert{1.6}{cm}, der Abstand der MLMs zum Plasmafokus \wert{1.2}{m}
+und zur MCP \wert{0.6}{m}. Die Krümmungsradien der Spiegel
+(\wert{1.8}{m} und \wert{0.5}{m}) sind so gewählt, daß beide
+Spiegel zusammen, wie ein Hohlspiegel mit Krümmungsradius
+\wert{1}{m} wirken \cite{chen:90}.
+\par
+Mit dieser Anordnung wird eine räumliche Auflösung von ca.
+\wert{1}{mm} und eine spektrale Auflösung von $\lambda /
+\Delta\lambda = 50-100$ erreicht.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C4-11}}
+  \caption{Schematische Darstellung des MLM-Systems am SPEED~2 \cite{bobashev:97}}
+  \label{fig:MLM}
+\end{figure}
+%
+\par
+Vor dem MLM-System wurde ein Filter (Be \wert{10}{$\mu$m} dick)
+angebracht. Dieser Filter ist nicht durchlässig für UV-Strahlung, die
+von den Spiegeln wellenlängenunabhängig reflektiert wird. Der Filter
+dient auch als Vakuumdichtung gegen die Entladungskammer, (Fülldruck
+typisch \wert{500}{Pa}) damit, das für die MCP notwendige Vakuum (unter
+\ewert{1}{-3}{Pa}) mit einer kleinen Turbo-Molekularpumpe erreicht
+werden kann.
+\par
+Eine MCP wird benötigt, weil der Abstand zur Röntgenquelle relativ
+groß ist und die Reflektivität der Spiegel gering ist (verglichen
+mit Spiegeln für den sichtbaren Wel"-len"-län"-gen"-be"-reich).
+Der Abstand konnte nicht (wesentlich) verkleinert werden, weil das
+Spiegelsystem mit MCP und Vakuumpumpe in einem Faraday-Käfig
+isoliert von der Entladungskammer aufgestellt werden muß. Benutzt
+wurde eine doppelte MCP mit hoher Verstärkung. Die Belichtungszeit
+betrug auch bei dieser MCP \wert{10}{ns}, weil sie zusammen mit
+der MCP des Spektrometers am gleichen Pulsgenerator betrieben
+wurde.
+\par
+Die Bilder wurden auf einem Kleinbildfilm Fujifilm Neopan
+Professional 1600 (ISO 1600, schwarz/weiß) aufgenommen.

@@ -1,0 +1,100 @@
+%
+%  Layout und andere Definitionen fuer die Doktorarbeit
+%
+
+%
+%  In der Datei temp.tex wird \dviDriver definiert.
+%  So kann aus der Batch der Treiber eingestellt werden.
+%  Moeglich sind:
+%
+%   \newcommand{\dviDriver}{dvips}
+%   \newcommand{\dviDriver}{dvipdfm}
+%   \newcommand{\dviDriver}{emtex}
+%
+\input{temp}
+
+\documentclass[\dviDriver,a4paper,10pt,oneside,final,german]{ub_artcl}
+
+\usepackage[cp850]{inputenc}
+\usepackage{babel}
+\usepackage{varioref}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{graphics}
+
+\bibliographystyle{alphadin}
+
+\pagestyle{empty}
+
+\textwidth150mm
+\textheight235mm
+\oddsidemargin0mm
+\evensidemargin0mm
+\topmargin-5mm
+
+\nonfrenchspacing
+\sloppy
+\flushbottom
+
+%
+%  Anfang eines Kapitels
+%
+\newcommand{\beginsection}[1]{
+    \clearpage
+    \thispagestyle{onlypagenumbers}
+    \cleardoublepage
+    \vspace*{0pt plus 100pt minus 20pt}
+    \section{#1}
+    \thispagestyle{onlypagenumbers}
+    \pagestyle{freeheadings}
+    \markboth{\noexpand\thepage \hfill Kapitel \thesection}{#1 \hfill \noexpand\thepage}
+    }
+
+%
+%  Anfang eines Abschnitts
+%
+\newcommand{\beginsubsection}[1]{
+    \par
+    \vspace*{0pt plus 30pt minus 10pt}
+    \subsection{#1}
+    }
+
+%
+%  Einfügen einer Abbildung
+%  alle Abbildungen liegen im eps-Format für dvips
+%  und im jpg-Format für dvipdfm vor
+%
+\DeclareOption{dvips}{\newcommand{\importimage}[1]{\includegraphics{#1.eps}}}
+\DeclareOption{dvipdfm}{\newcommand{\importimage}[1]{\includegraphics{#1.jpg}}}
+\DeclareOption{emtex}{\newcommand{\importimage}[1]{Datei: #1}}
+\ProcessOptions
+
+%
+%  Kürzel für Isolatormaterial Al2O3
+%
+\newcommand{\AlO}{Al$_2$O$_3$}
+
+%
+%  Kürzel für effektive Injektionszeit
+%
+\newcommand{\teff}{$\tau _{\rm eff}$ }
+
+%
+%  Eine Zahl mit Einheit z.B:  10 kg
+%
+\newcommand{\wert}[2]{\mbox{$#1$\ #2}}
+
+%
+%  Eine Zahl mit Exponenten und Einheit z.B. 1*10^4 g
+%
+\newcommand{\ewert}[3]{\mbox{$#1 \cdot 10^{#2}$\ #3}}
+
+%
+%  Eine Zahl nur aus Exponenten und Einheit z.B. 1*10^4 g
+%
+\newcommand{\fwert}[2]{\mbox{$10^{#1}$\ #2}}
+
+%
+%  Besondere Trennungsregeln
+%
+\hyphenation{ließe}

@@ -1,0 +1,957 @@
+%
+%  Untersuchung des stabilen Säu"-len"-mo"-dus
+%
+\beginsection{Untersuchung des stabilen Säulenmodus}
+\label{sec:untersuchung}
+%
+Im Kapitel \ref{sec:betriebsparameter} wurde gezeigt, das der SCM und
+der MPM zuverlässig über die Betriebsparameter eingestellt werden kann.
+Experimentell liefern die untersuchten Abhängigkeiten zwischen den
+eingestellten Parametern und dem resultierenden Entladungsmodus wenig
+Informationen für die Erklärung des SCM. Daher wurden mehr Diagnostiken
+eingesetzt, um die Entstehung der Säule zu untersuchen.
+\par
+Es wird auch eine andere Vorgehensweise als im Kapitel
+\ref{sec:betriebsparameter} eingesetzt. Nicht mehr komplette Meßreihen
+werden als ganzes betrachtet, sondern spezielle Entladungen werden
+herausgesucht, um an diesen die als grundlegend erkannten Effekte zu
+präsentieren. Dabei werden natürliche viele aufgenommene Meßdaten, an
+dieser Stelle, nicht dokumentiert. (Der Umfang der vorliegenden Daten
+ließe ein solchen Versuch auch nicht zu.) Die Selektion erfolgt zum
+Teil subjektiv, aufgrund der Erfahrung im Umgang mit dem Experiment und
+den Diagnostiken, aber auch objektiv aufgrund des zu zeigenden Effekts,
+bereinigt von den Effekten der Schuß-zu-Schuß Schwankungen durch die
+Isolatorproblematik. Unter anderen Gesichtspunkten lassen sich auch
+andere Zusammenstellungen der vorzuführenden Entladungen finden. In
+diesem Sinn wird bei den meisten Entladungen verkürzend von \glqq
+typischen Entladungen\grqq\ gesprochen.
+%
+\beginsubsection{Frühe Pinchphase}
+%
+\par
+Bei den typischen Entladungen sind zu Beginn der Kompressionsphase
+keine wesentlichen Unterschiede zwischen dem SCM und dem MPM
+sichtbar. Da die Gasinjektion den Entladungsmodus mitbestimmt,
+können sich die Unterschiede erst am Ende der Kompression
+ausbilden. Die Filamente (\wert{-10}{ns}, \wert{-5}{ns}) treten im
+SCM nicht auf.
+\par
+Die Abbildung \vref{fig:MCP:anfang} zeigt die Kompressionsphase
+der Fokusentladung. Die Bilder wurden mit einer MCP ohne Filter
+aufgenommen (\wert{\lambda < 20}{nm}). Die Zeiten der einzelnen
+Bilder sind relativ zum Zeitpunkt der maximalen Kompression
+angegeben.
+\par
+\wert{40}{ns} vor der maximalen Kompression hat die Schicht einen
+Durchmesser von ca. \wert{1.5}{cm}. Vor diesem Zeitpunkt ist ihre
+Helligkeit erheblich geringer, weil noch kein Hoch-Z-Gas von der
+Schicht aufgenommen wurde. In dieser Phase läuft die Schicht mit
+typisch \ewert{3}{5}{m/s} auf die Achse zu.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-05}}
+  \caption{Kompressionsphase aufgenommen mit der MCP $\lambda <$ (\wert{20}{nm}).
+     Belichtungszeit \wert{3}{ns}, Zeitangaben relativ zur maximalen Kompression.}
+  \label{fig:MCP:anfang}
+\end{figure}
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|c|}
+  \hline
+                               & \wert{-40}{ns} und \wert{-20}{ns} & \wert{-10}{ns} und \wert{-5}{ns} \\
+  \hline
+    Ladespannung U             & \multicolumn{2}{c|}{ \wert{180}{kV} }     \\
+    Bankenergie E              & \multicolumn{2}{c|}{ \wert{55}{kJ} }      \\
+    Füllgas                    & \multicolumn{2}{c|}{ Deuterium 2.7 }      \\
+    Fülldruck p(D$_2$)         & \multicolumn{2}{c|}{ \wert{3.5}{hPa} }    \\
+    Injektionsgas              & \multicolumn{2}{c|}{ Argon 4.6 }          \\
+    Injektionsdruck p(Ar)      & \multicolumn{2}{c|}{ \ewert{3.5}{5}{Pa} } \\
+    Injektionszeit \teff       & \multicolumn{2}{c|}{ \wert{1.5}{ms} }     \\
+    Nummer                     & 6.651        & 6.705                      \\
+  \hline
+  \end{tabular}
+  \caption{Parameter der Entladungen in Abbildung \ref{fig:MCP:anfang}}
+  \label{tab:MCP:anfang}
+\end{table}
+%
+\par
+Im MPM verhindern die m=0-Instabilitäten die Bildung einer
+homogenen Plasmasäule. Die Abbildung \vref{fig:MCP:mpm} zeigt die
+Pinchphase einer typischen Entladung im MPM. Die Einschnürungen
+entwickeln sich im ns-Bereich. In ihnen kann es zu einem lokalen
+Strahlungskollaps kommen, der durch seine intensive
+Röntgenstrahlung mit der Rönt"-gen"-pin"-hole"-kame"-ra sichtbar
+wird (rechtes Teilbild).
+\par
+Die Bildung der Mikropinche beginnt in Anodennähe. Nicht alle
+Einschnürungen führen dabei zu Mikropinchen. Die Position und die
+Anzahl unterliegen starken Schwankungen, weil sie durch die
+zufälligen Instabilitäten ausgelöst werden \cite{roewe:phd}.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-06}}
+  \caption{Bildung von Mikropinchen aus Instabilitäten.
+    Die drei linken Aufnahmen sind MCP-Bilder (ungefiltert,
+    \wert{\lambda < 20}{nm}) mit einer Belichtungszeit von \wert{3}{ns}.
+    Die rechte Aufnahme ist ein zeitintegriertes Pinholebild
+   (\wert{130}{$\mu$m} Be Filter, \wert{\lambda < 0.7}{nm}).}
+  \label{fig:MCP:mpm}
+\end{figure}
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|}
+  \hline
+    Ladespannung U             & \wert{180}{kV}    \\
+    Bankenergie E              & \wert{57}{kJ}     \\
+    Füllgas                    & Deuterium 2.7     \\
+    Fülldruck p(D$_2$)         & \wert{3.7}{hPa}   \\
+    Injektionsgas              & Argon 4.6         \\
+    Injektionsdruck p(Ar)      & \ewert{3.5}{5}{Pa}\\
+    Injektionszeit \teff       & \wert{1.5}{ms}    \\
+    Nummer                     & 6.641             \\
+  \hline
+  \end{tabular}
+  \caption{Parameter der Entladung in Abbildung \ref{fig:MCP:mpm}}
+  \label{tab:MCP:mpm}
+\end{table}
+%
+\par
+Im SCM zeigt sich ein völlig anderes Verhalten in der Pinchphase.
+Nach dem Wechsel des Injektionsgases von Argon nach Neon (die
+anderen Betriebsparameter in der Tabelle \vref{tab:MCP:scm})
+arbeitet die Anlage im SCM. Die Abbildung \vref{fig:MCP:scm} zeigt
+die Entwicklung der Plasmasäule unter diesen Bedingungen.
+\par
+Innerhalb der dargestellten \wert{10}{ns} sind keine Anzeichen
+einer Instabilität erkennbar. Größe und Form der Plasmasäule sind
+nahezu konstant. Das Maximum der Helligkeit der Säule schiebt sich
+langsam von der Anode weg. Diese Stabilität zeichnet den SCM aus,
+ganz im Gegensatz zum CM anderer Anlagen (vgl. Abschnitt
+\vref{sec:vergleich}). Auf dem zeitintegrierten Bild der
+Rönt"-gen"-pin"-hole"-kame"-ra (\wert{\lambda < 2}{nm}, in der
+Abbildung rechts) wird die Säulenform sichtbar.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-07}}
+  \caption{Pinchsäule im SCM ohne Instabilitäten.
+     Die drei linken Aufnahmen sind MCP-Bilder (ungefiltert,
+     \wert{\lambda < 20}{nm}) mit einer Belichtungszeit von \wert{3}{ns}.
+     Die rechte Aufnahme ist ein zeitintegriertes Pinholebild
+     (\wert{10}{$\mu$m} Be Filter, \wert{\lambda < 2}{nm}).}
+  \label{fig:MCP:scm}
+\end{figure}
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|}
+  \hline
+    Ladespannung U             & \wert{180}{kV}    \\
+    Bankenergie E              & \wert{59}{kJ}     \\
+    Füllgas                    & Deuterium 2.7     \\
+    Fülldruck p(D$_2$)         & \wert{3.4}{hPa}   \\
+    Injektionsgas              & Neon 4.0          \\
+    Injektionsdruck p(Ne)      & \ewert{3.0}{5}{Pa}\\
+    Injektionszeit \teff       & \wert{1.5}{ms}    \\
+    Nummer                     & 9.491             \\
+  \hline
+  \end{tabular}
+  \caption{Parameter der Entladung in Abbildung \ref{fig:MCP:scm}}
+  \label{tab:MCP:scm}
+\end{table}
+\par
+%
+Die Aufnahmen der MCP-Kamera geben einen breiten
+Wel"-len"-län"-gen"-be"-reich im VUV- und SXR-Bereich wieder. Mit
+der MLM-Optik lassen sich Bilder aus einem schmalen
+Wellenlängenintervall ($\lambda/\Delta\lambda = 50-100$) gewinnen.
+Die Intensität der Röntgenstrahlung ist durch die doppelte
+Reflexion in der Spiegeloptik so weit abgeschwächt, daß eine
+schlechtere Bildqualität resultiert.
+\par
+Die Abbildung \vref{fig:MLM:Kompression} zeigt eine Sequenz von
+MLM-Aufnahmen bei \wert{\lambda = 0.85}{nm} in dem Bereich der
+Kontinuumsstrahlung des Neon/Deuterium-Plasmas. Die Aufnahmen
+zeigen die Entstehung der Säule im SCM. Der anfängliche
+Hohlzylinder (\wert{t = -30}{ns}) wird, von der Anode beginnend
+(\wert{t = -10}{ns}), zur stabilen Pinchsäule (\wert{t = +30}{ns})
+komprimiert. Hier wird ein Durchmesser von ca. \wert{4}{mm}
+erreicht.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-10}}
+  \caption{Bildung der stabilen Plasmasäule. Bilder aufgenommen mit dem
+     MLM-System bei \wert{\lambda = 0.85}{nm}. Die Zeiten sind bezogen
+     auf den Zeitpunkt der maximalen Kompression. Die Belichtungszeiten sind
+     \wert{10}{ns}.}
+  \label{fig:MLM:Kompression}
+\end{figure}
+%
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|c|c|}
+  \hline
+                               & \wert{-30}{ns} & \wert{-10}{ns} & \wert{+30}{ns} \\
+  \hline
+    Ladespannung U             & \multicolumn{3}{c|}{ \wert{180}{kV} }     \\
+    Bankenergie E              & \multicolumn{3}{c|}{ \wert{62}{kJ} }      \\
+    Füllgas                    & \multicolumn{3}{c|}{ Deuterium 2.7 }      \\
+    Fülldruck p(D$_2$)         & \wert{8.2}{hPa} & \wert{7.9}{hPa} & \wert{8.2}{hPa} \\
+    Injektionsgas              & \multicolumn{3}{c|}{Neon 4.0}             \\
+    Injektionsdruck p(Ne)      & \multicolumn{3}{c|}{ \ewert{9.0}{5}{Pa} } \\
+    Injektionszeit \teff       & \multicolumn{3}{c|}{ \wert{1.5}{ms} }     \\
+    Nummer                     & 12.574      & 12.582   & 12.576           \\
+  \hline
+  \end{tabular}
+  \caption{Parameter der Entladungen in Abbildung \ref{fig:MLM:Kompression}}
+  \label{tab:MLM:Kompression}
+\end{table}
+%
+\par
+Auch bei diesen Aufnahmen ist die gute Homogenität der Säule
+sichtbar. Die gute Reproduzierbarkeit der Entladungen im SCM
+ermöglicht die Kombination der Aufnahmen von verschiedener
+Entladungen zu einer Bildsequenz.
+\par
+Weitere Informationen über das Plasma können mit der Spektroskopie
+gewonnen werden. Erste Messungen zur Bestimmung der Elektronendichte
+und Elektronentemperatur werden hier vorgestellt.
+\par
+Die Abbildung \vref{fig:spektrum} zeigt ein Spektrum, aufgenommen
+\wert{20}{ns} vor der maximalen Kompression, mit einer
+Belichtungszeit von \wert{10}{ns}. Aus dem Abfall der Intensität
+zu kleinen Wellenlängen hin, folgt (mit Beachtung der
+Empfindlichkeitskurven von MCP und Scanner) die
+Elektronentemperatur zu \wert{\rm kT_{\rm e} \approx 300}{eV}. Die
+Elektronendichte kann u.a. aus der Starkverbreiterung bestimmt
+werden. Aus der Linie vom Übergang n=8 nach n=1 (die höchste
+sichtbare Linie) folgt die Elektronendichte zu \ewert{\rm n_{\rm
+e} = 2.5}{26}{m$^{-3}$}.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-08}}
+  \caption{Das Spektrum, aufgenommen mit dem Kristallspektrometer, zeigt
+     Linien von wasserstoffähnlichem Neon. Belichtungszeit \wert{10}{ns}
+     um den Zeitpunkt \wert{t=-20}{ns}.}
+  \label{fig:spektrum}
+\end{figure}
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|}
+  \hline
+    Ladespannung U             & \wert{180}{kV}    \\
+    Bankenergie E              & \wert{64}{kJ}     \\
+    Füllgas                    & Deuterium 2.7     \\
+    Fülldruck p(D$_2$)         & \wert{8.2}{hPa}   \\
+    Injektionsgas              & Neon 4.0          \\
+    Injektionsdruck p(Ne)      & \ewert{9.0}{5}{Pa}\\
+    Injektionszeit \teff       & \wert{1.5}{ms}    \\
+    Nummer                     & 12.573            \\
+  \hline
+  \end{tabular}
+  \caption{Parameter der Entladung in Abbildung \ref{fig:spektrum}}
+  \label{tab:spektrum}
+\end{table}
+%
+\par
+Dichte und Temperatur werden in den noch folgenden \wert{20}{ns} der
+Kom\-pres\-sions\-phase sicherlich weiter steigen, weil der
+Pinchdurchmesser um ca. den Faktor 2 abnimmt. Entsprechende
+spektroskopische Messungen werden zur Zeit durchgeführt.
+%
+\beginsubsection{Pinchphase}
+%
+\par
+Die Dynamik der Plasmasäule kann gut mit der Streakkamera
+untersucht werden. Die Streakkamera liefert räumlich nur eine
+1-dimensionale Auflösung, aber bei der einfachen Struktur der
+Strahlungsquelle reicht diese aus.
+\par
+Das Zeitfenster der verwendeten Streakkamera (vgl. Abschnitt
+\vref{sec:streakkamera}) ist maximal \wert{40}{ns} groß, daher
+müssen in der Regel mehrere Aufnahmen von verschiedenen
+Entladungen zusammen betrachtet werden, um die Säule während ihrer
+gesamten Lebensdauer zu beobachten. Dieses ist aufgrund der guten
+Reproduzierbarkeit der Entladung im SCM möglich. Die
+Reproduzierbarkeit wurde durch Aufnahmen zu gleichen Zeiten und
+durch überlappende Zeitfenster überprüft.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-01}}
+  \caption{Gestreakte Schnitte durch die Pinchsäule mit unterschiedlichen
+      Filtern aufgenommen. Obere Hälfte mit \wert{135}{$\mu$m} Be gefiltert
+      (\wert{\lambda < 0.8}{nm}), untere Hälfte mit \wert{10}{$\mu$m}
+      Be gefiltert (\wert{\lambda < 2}{nm}). Durch den Abbildungsfehler der
+      Streakkamera kommt es zur scheinbaren Kompression im mittleren Bild.}
+  \label{fig:schnitteA}
+\end{figure}
+%
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|c|c|}
+  \hline
+                               & oben        & mitte      & unten          \\
+  \hline
+    Ladespannung U             & \multicolumn{3}{c|}{ \wert{180}{kV} }     \\
+    Bankenergie E              & \multicolumn{3}{c|}{ \wert{66}{kJ} }      \\
+    Füllgas                    & \multicolumn{3}{c|}{ Deuterium 2.7 }      \\
+    Fülldruck p(D$_2$)         & \multicolumn{3}{c|}{ \wert{9.2}{hPa} }    \\
+    Injektionsgas              & \multicolumn{3}{c|}{ Neon 4.0 }           \\
+    Injektionsdruck p(Ne)      & \multicolumn{3}{c|}{ \ewert{5.0}{5}{Pa} } \\
+    Injektionszeit \teff       & \multicolumn{3}{c|}{ \wert{3.0}{ms} }     \\
+    Nummer                     & 12.352      & 12.353   & 12.360           \\
+  \hline
+  \end{tabular}
+  \caption{Parameter der Entladungen in Abbildung \ref{fig:schnitteA}}
+  \label{tab:schnitteA:para}
+\end{table}
+%
+\par
+Die Abbildung \vref{fig:schnitteA} kombiniert drei Aufnahmen der
+Streakkamera. Der \wert{0.55}{mm} breite Spalt der Kamera wurde so
+gelegt, daß eine radiale Auflösung der Plasmasäule sichtbar wird.
+Die Skizze rechts oben in der Abbildung deutet die Lage des
+Spaltes \wert{8}{mm} oberhalb der Anode an. Die Plasmasäule wurde
+mit zwei Pinholes (\wert{\phi = 250}{$\mu$}m) und
+unterschiedlichen Filtern auf die Spaltebene abgebildet. Damit
+wird der gleiche Schnitt durch die Pinchsäule in zwei
+verschiedenen Wellenlängenbereichen (\wert{\lambda < 0.8}{nm} und
+\wert{\lambda < 2}{nm}) dargestellt.
+\par
+Die sichtbaren Kompression bei der mittleren Streakaufnahme ist
+durch den Abbildungsfehler des Bildverstärkers (siehe Abschnitt
+\ref{sec:streakkamera}) bedingt. Der Durchmesser am Rand und in
+der Mitte ist bis auf \wert{0.1}{mm} gleich.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-02}}
+  \caption{Gestreakte Schnitte durch die Pinchsäule mit unterschiedlichen
+     Filtern. Obere Hälfte \wert{\lambda < 0.8}{nm}, \wert{135}{$\mu$m}
+     Be Filter; untere Hälfte \wert{\lambda < 2}{nm}, \wert{10}{$\mu$m}
+     Be Filter.}
+  \label{fig:schnitteB}
+\end{figure}
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|c|}
+  \hline
+                               & oben            & unten                   \\
+  \hline
+    Ladespannung U             & \multicolumn{2}{c|}{ \wert{180}{kV} }     \\
+    Bankenergie E              & \multicolumn{2}{c|}{ \wert{66}{kJ} }      \\
+    Füllgas                    & \multicolumn{2}{c|}{ Deuterium 2.7 }      \\
+    Fülldruck p(D$_2$)         & \multicolumn{2}{c|}{ \wert{9.4}{hPa} }    \\
+    Injektionsgas              & \multicolumn{2}{c|}{ Neon 4.0 }           \\
+    Injektionsdruck p(Ne)      & \multicolumn{2}{c|}{ \ewert{5.0}{5}{Pa} } \\
+    Injektionszeit \teff       & \multicolumn{2}{c|}{ \wert{7.5}{ms} }     \\
+    Nummer                     & 12.368        & 12.369                    \\
+  \hline
+  \end{tabular}
+  \caption{Parameter der Entladungen in Abbildung \ref{fig:schnitteB}}
+  \label{tab:schnitteB:para}
+\end{table}
+%
+\par
+Der Pinch wird im kürzeren Wel"-len"-län"-gen"-be"-reich
+\wert{5-10}{ns} später sichtbar. Die höchste Temperatur wird in
+einer Zeitdauer von \wert{\le 25}{ns} erreicht. Im Bereich
+\wert{\lambda < 2}{nm} ist die Säule \wert{90}{ns} lang sichtbar.
+Der Durchmesser der Quelle liegt dabei zwischen \wert{5.5}{mm} und
+\wert{4.7}{mm}. Der Durchmesser der Quelle bei \wert{\lambda <
+0.8}{nm} ist mit \wert{2.3}{mm} deutlich kleiner.
+\par
+Die Lebensdauer und der Durchmesser der Plasmasäule ist abhängig
+vom Neonanteil im Plasma.
+\par
+Die Streakbilder in Abbildung \vref{fig:schnitteB} wurden bei
+Entladungen mit größerem Neonanteil aufgenommen. Der Neonanteil wurde
+durch eine längere Injektionszeit (\teff \wert{= 7.5}{ms} gegen
+\wert{3.0}{ms}) erreicht. Die anderen Betriebsparameter wurden
+beibehalten, siehe dazu Tabelle \vref{tab:schnitteA:para} und
+\vref{tab:schnitteB:para}. Die Liniendichte des Neons hat sich dabei
+von geschätzten \ewert{\rm n(Ne) = 6.8}{19}{m$^{-1}$} auf \ewert{\rm n(Ne) =
+1.7}{20}{m$^{-1}$} erhöht.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-03}}
+  \caption{Gestreakte Schnitte durch die Pinchsäule bei unterschiedlichen
+     Höhen (\wert{3}{mm} und \wert{13}{mm}) über der Anode gefiltert mit
+     \wert{10}{$\mu$m} Be + \wert{0.5}{$\mu$m} Cu (\wert{\lambda < 2}{nm}).
+     Das Plasma wird bei größerem Abstand zur Anode später sichtbar.}
+  \label{fig:schnitteC}
+\end{figure}
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|c|}
+  \hline
+                               & oben            & unten                   \\
+  \hline
+    Ladespannung U             & \multicolumn{2}{c|}{ \wert{180}{kV} }     \\
+    Bankenergie E              & \multicolumn{2}{c|}{ \wert{64}{kJ} }      \\
+    Füllgas                    & \multicolumn{2}{c|}{ Deuterium 2.7 }      \\
+    Fülldruck p(D$_2$)         & \multicolumn{2}{c|}{ \wert{6.0}{hPa} }    \\
+    Injektionsgas              & \multicolumn{2}{c|}{ Neon 4.0 }           \\
+    Injektionsdruck p(Ne)      & \multicolumn{2}{c|}{ \ewert{4.0}{5}{Pa} } \\
+    Injektionszeit \teff       & \multicolumn{2}{c|}{ \wert{3.0}{ms} }     \\
+    Nummer                     & 12.470        & 12.463                    \\
+  \hline
+  \end{tabular}
+  \caption{Parameter der Entladungen in Abbildung \ref{fig:schnitteC}}
+  \label{tab:schnitteC:para}
+\end{table}
+%
+\par
+Die Vergrößerung des Neonanteils führte zu einer kleineren
+Lebensdauer: von \wert{90}{ns} auf \wert{60}{ns} bei \wert{\lambda
+< 2}{nm} und von \wert{25}{ns} auf \wert{20}{ns} bei \wert{\lambda
+< 0.8}{nm}. Der Durchmesser der Quelle wurde dabei fast halbiert:
+von \wert{4.7}{mm} auf \wert{2.9}{mm} bei \wert{\lambda < 2}{nm}
+und von \wert{2.3}{mm} auf \wert{1.2}{mm} bei \wert{\lambda <
+0.8}{nm}. Die Verzögerung zwischen dem Einsetzen der Strahlung bei
+\wert{\lambda < 2}{nm} und \wert{\lambda < 0.8}{nm} hat sich
+ebenfalls verkleinert.
+\par
+Eine weitere Erhöhung des Neonanteils führt zum Übergang vom SCM
+in den MPM.
+\par
+Bei radial-aufgelösten Streaks können nicht nur unterschiedliche
+Wellenlängenbereiche untersucht werden, es können auch
+unterschiedliche Schnitte durch die Pinchsäule betrachtet werden.
+Dabei ist es in der Regel sinnvoll, die beiden abbildenden
+Pinholes mit gleichen Filtern auszustatten.
+\par
+Die Abbildung \vref{fig:schnitteC} zeigt solche Streakaufnahmen.
+Die Schnitte durch die Plasmasäule wurden in \wert{13}{mm} und
+\wert{3}{mm} Abstand zur Anode gelegt, wie die Skizze in der
+Abbildung andeutet. Benutzt wurden ein Filter \wert{10}{$\mu$m} Be
++ \wert{0.5}{$\mu$m} Cu mit \wert{\lambda < 2}{nm} und ein
+\wert{0.55}{mm} breiter Spalt.
+\par
+Beim Abstand \wert{3}{mm} ist die Bildung der heißen Pinchsäule
+besonders gut sichtbar. Die Kompression erfolgt immer noch mit einer
+Radialgeschwindigkeit von \ewert{1}{5}{m/s}, die schon auf den frühen
+MCP-Bildern (vgl. Abbildung \vref{fig:MCP:anfang}) ablesbar war. Die
+Lebensdauer der Quelle ist mit \wert{30}{ns} deutlich kleiner als bei
+der Höhe \wert{8}{mm} und bei vergleichbaren Betriebsparameter (Tabelle
+\ref{tab:schnitteA:para} und \ref{tab:schnitteC:para}). Beim Abstand
+\wert{13}{mm} setzt die Strahlung um \wert{20}{ns} verzögert ein, was
+einer Geschwindigkeit von \ewert{5}{5}{m/s} entspricht. Der Durchmesser
+der Quelle nimmt in Richtung Anode leicht zu: von \wert{3}{mm} bei
+\wert{h = 13}{mm} auf \wert{4}{mm} bei \wert{h = 3}{mm}.
+%
+\beginsubsection{Späte Pinchphase}
+\label{sec:zweiteKompression}
+%
+\par
+Neben der radialen Auflösung der Plasmasäule, ist auch eine axiale
+Auflösung möglich. Bei Filterung mit \wert{0.5}{mm} Beryllium
+(\wert{\lambda < 0.5}{nm}) ist nur der heiße Kern der Säule sichtbar.
+Der Durchmesser der sichtbaren Säule (\wert{\le 2}{mm}) wird durch die
+Abbildung, mit dem Pinhole (\wert{\phi = 300}{$\mu$m}), auf die
+Spaltebene der Streakkamera auf \wert{\le 0.8}{mm} reduziert. Daher
+kann auf einen schmalen Spalt verzichtet werden und mit der ganzen
+Fläche der Photokathode (Breite ca. \wert{5}{mm}) gearbeitet werden,
+wodurch die Justierung erheblich vereinfacht wird.
+\par
+Die Abbildung \vref{fig:laengs} zeigt verschiedene
+axial-aufgelöste Streakaufnahmen von der Plasmasäule. Bei der
+Anode beginnend wächst die Quelle mit \ewert{3}{5}{m/s} bis auf
+eine Länge von ca. \wert{9}{mm}. Über einen Zeitraum von
+\wert{15-25}{ns} existiert eine \wert{5-9}{mm} lange Säule im
+Bereich \wert{\lambda < 0.5}{nm}. Die Intensität der Quelle
+schwankt von Entladung zu Entladung, aber die Lebensdauer und die
+Größe bleibt ähnlich.
+\par
+Auffällig ist bei einigen Entladungen ein zweiter
+Strahlungsausbruch nach typisch \wert{30}{ns}. Selten werden bis
+zu drei dieser intensiven Strahlungsquellen beobachtet. Wenn sie
+auftreten, dann in Anodennähe, bei einem maximalen Abstand von
+\wert{7}{mm} zur Anode.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-04}}
+  \caption{Axial-aufgelöste Streaks der Pinchsäule, gefiltert mit
+     \wert{0.5}{mm} dickem Beryllium-Filter (\wert{\lambda < 0.5}{nm}).
+     Diese Bilder wurden wie auf Seite \pageref{streaknachbearbeitung}
+     beschrieben nachbearbeitet.}
+  \label{fig:laengs}
+\end{figure}
+%
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|c|c|}
+  \hline
+                               & oben        & mitte      & unten          \\
+  \hline
+    Ladespannung U             & \multicolumn{3}{c|}{ \wert{180}{kV} }     \\
+    Bankenergie E              & \multicolumn{3}{c|}{ \wert{62}{kJ} }      \\
+    Füllgas                    & \multicolumn{3}{c|}{ Deuterium 2.7 }      \\
+    Fülldruck p(D$_2$)         & \wert{7.9}{hPa} & \wert{8.2}{hPa} & \wert{7.9}{hPa} \\
+    Injektionsgas              & \multicolumn{3}{c|}{Neon 4.0}             \\
+    Injektionsdruck p(Ne)      & \multicolumn{3}{c|}{ \ewert{9.0}{5}{Pa} } \\
+    Injektionszeit \teff       & \multicolumn{3}{c|}{ \wert{1.5}{ms} }     \\
+    Nummer                     & 12.606      & 12.609   & 12.611           \\
+  \hline
+  \end{tabular}
+  \caption{Parameter der Entladungen in Abbildung \ref{fig:laengs}}
+  \label{tab:laengs:para}
+\end{table}
+%
+\par
+Die Abbildung \vref{fig:zweiteKompression} zeigt eine
+zeitaufgelöste MLM-Aufnahme und eine zeitintegrierte
+Röntgenpinholeaufnahme von dieser Quelle. Das Röntgenpinholebild
+ist ebenfalls mit \wert{0.5}{mm} Beryllium (\wert{\lambda <
+0.5}{nm}) gefiltert. Die MLM-Optik wurde auf \wert{\lambda =
+0.85}{nm} (Kontinuumsstrahlung) eingestellt. Die Aufnahme entstand
+\wert{30}{ns} nach der maximalen Kompression mit einer
+Belichtungszeit von \wert{10}{ns}.
+\par
+Auf dem Bild der Rönt"-gen"-pin"-hole"-kame"-ra ist im
+wesentlichen die Säu"-len"-struk"-tur sichtbar, weil die Aufnahme
+zeitintegriert ist, aber im anodennahen Bereich ist die Schwärzung
+des Filmes stärker als in der übrigen Säu"-len"-struk"-tur. Durch
+die gewählte Darstellung ist dieses deutlich sichtbar.
+\par
+Das Bild des MLM-Systems zeigt den Effekt besser, weil es sich um
+eine zeitaufgelöste Aufnahme handelt. Auf einer Länge von
+\wert{7}{mm} ist die sichtbare Plasmasäule auf einen Durchmesser
+von \wert{1}{mm} komprimiert und dabei aufgeheizt worden.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-11}}
+  \caption{Links: Aufnahme der MLM-Optik bei \wert{\lambda = 0.85}{nm},
+     \wert{t = 30}{ns} nach maximaler Kompression, Belichtungszeit \wert{10}{ns}.
+     Rechts: zeitintegrierte Aufnahme der Rönt"-gen"-pin"-hole"-kame"-ra (\wert{0.5}{mm} Be Filter,
+     \wert{\lambda < 0.5}{nm}). Die Darstellung ist mit schwarz $\approx$ opt. Dichte
+     1, weiß $\approx$ opt. Dichte 0.85 extrem gewählt, damit die anodennahe
+     zweite Kompression gut sichtbar ist.}
+  \label{fig:zweiteKompression}
+\end{figure}
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|}
+  \hline
+    Ladespannung U             & \wert{180}{kV}    \\
+    Bankenergie E              & \wert{64}{kJ}     \\
+    Füllgas                    & Deuterium 2.7     \\
+    Fülldruck p(D$_2$)         & \wert{8.2}{hPa}   \\
+    Injektionsgas              & Neon 4.0          \\
+    Injektionsdruck p(Ne)      & \ewert{5.0}{5}{Pa}\\
+    Injektionszeit \teff       & \wert{2.5}{ms}    \\
+    Nummer                     & 12.551            \\
+  \hline
+  \end{tabular}
+  \caption{Parameter der Entladung in Abbildung \ref{fig:zweiteKompression}}
+  \label{tab:zweiteKompression}
+\end{table}
+%
+\beginsubsection{Neutronenproduktion}
+%
+\par
+Die Fokusentladung in Deuterium/Hoch-Z-Gas ist nicht nur eine VUV- und
+SXR-Quelle, sondern auch eine Neutronenquelle. Die Neutronen entstehen
+aus Fusionsprozessen zwischen den Deuteronen (siehe Abschnitt
+\vref{sec:neutronendiagnostik}). Mit der
+Photomultiplier/Szintillator-Kombination wurden die Neutronen
+zeitaufgelöst und mit dem Sil\-ber\-akti\-vie\-rungs\-zähler
+zeitintegriert gemessen.
+\par
+Zur Untersuchung der Unterschiede in der Neutronenproduktion zwischen
+dem SCM und dem MPM wurden Messungen durchgeführt, bei denen der
+Entladungsmodus durch Änderung der Injektionszeit und des
+Injektionsdrucks beeinflußt wurde. Der Anteil des Injektionsgases wurde
+auf verschiedene Arten und auf verschiedene Werte eingestellt, um die
+Variationen der Entladungen innerhalb eines Modus zu erfassen.
+\par
+Der Entladungsmodus wurde bei jeder untersuchten Entladung am Bild
+der Rönt"-gen"-pin"-hole"-kame"-ra festgestellt. Entladungen mit
+zu geringer Strahlung wurden aussortiert, ebenso wurden
+Entladungen mit zu geringer Neutronenproduktion anhand des
+PM/Szintillator-Signals aussortiert. Die Betriebsparameter der
+Meßreihe sind in der Tabelle \vref{tab:neutronen:alle} aufgeführt.
+Von den 107 Entladungen waren 48 Entladungen für die Auswertung
+verwendbar.
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|}
+  \hline
+    Ladespannung U             & \wert{180}{kV}                          \\
+    Bankenergie E              & \wert{67}{kJ} -- \wert{62}{kJ}          \\
+    Füllgas                    & Deuterium 2.7                           \\
+    Fülldruck p(D$_2$)         & \wert{8.8}{hPa} -- \wert{14}{hPa}       \\
+    Injektionsgas              & Argon 4.6                               \\
+    Injektionsdruck p(Ar)      & \ewert{5.0}{5}{Pa} -- \ewert{9.5}{5}{Pa}\\
+    Injektionszeit \teff       & \wert{0.5}{ms} -- \wert{9.5}{ms}        \\
+    Nummer                     & 12.122 -- 12.228                        \\
+  \hline
+  \end{tabular}
+  \caption{Parameter der Entladung, an denen die Neutronenproduktion
+     untersucht wurde.}
+  \label{tab:neutronen:alle}
+\end{table}
+%
+\par
+Die Pulse aus dem Silberaktivierungszähler (side on, Abstand
+\wert{2.5}{m}, siehe dazu Abschnitt \vref{sec:neutronendiagnostik})
+sind proportional zu den produzierten Neutronen (1 Puls = ca.
+\fwert{7}{Neutronen}).
+\par
+Die Tabelle \vref{tab:neutronen:gruppen} gibt die Mittelwerte der
+gezählten Pulse pro Entladung eingeteilt in verschiedene Gruppen. Die
+Entladungen im SCM zeigen eine deutlich größere Neutronenproduktion als
+die Entladungen im MPM. Der Abstand zwischen den Mittelwerten ist mit
+$2.6\ \cdot $ Intervallbreite der Meßunsicherheit deutlich. Die nach
+Injektionszeit aufgeteilten Gruppen zeigen eine noch deutlichere
+Trennung bei einem Abstand von $2.9\ \cdot $ Intervallbreite der
+Meßunsicherheit zwischen den Mittelwerten.
+\par
+Der erhöhten Neutronenproduktion beim SCM liegt also der Trend
+zugrunde, daß die Neutronenproduktion bei Reduzierung des
+Injektionsgases ansteigt. Dieser Trend ist nicht nur zwischen den
+Entladungsmodi sichtbar, er deutet sich auch innerhalb eines
+Entladungsmodus an, aber die großen Schuß-zu-Schuß Schwankungen machen
+diesen Zusammenhang nur schwer meßbar.
+\par
+Die Vergrößerung der Injektionsgasmenge führt also zu einer
+Reduzierung der Neutronenproduktion und beim Überschreiten eines
+Grenzwertes zum Wechseln vom SCM in den MPM.
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|c|}
+  \hline
+     Gruppe                                 & Anzahl  & Mittelwert der Pulse \\
+  \hline
+     alle Entladungen                       & 48      & 6346 $\pm$ 442 \\
+  \hline
+     Entladungen im SCM                     & 23      & 7860 $\pm$ 541 \\
+     Entladungen im MPM                     & 25      & 4954 $\pm$ 565 \\
+  \hline
+     Injektionszeit \teff \wert{< 3.5}{ms}  & 28      & 6290 $\pm$ 513 \\
+     Injektionszeit \teff \wert{\ge 3.5}{ms}& 20      & 3079 $\pm$ 582 \\
+  \hline
+  \end{tabular}
+  \caption{Mittelwerte der Pulse aus dem Silberaktivierungszähler. Vergleich von verschiedenen
+     Gruppen der ausgewählten 48 Entladungen mit Argon-Injektion.}
+  \label{tab:neutronen:gruppen}
+\end{table}
+%
+\par
+Ein Blick auf die Histogramme in den Abbildungen
+\vref{fig:neutronen:statistikA} bis \ref{fig:neutronen:statistikC}
+zeigt die große Variation der gezählten Pulse. Dabei handelt es
+sich nicht nur um die Schuß-zu-Schuß Schwankungen, es sind auch
+die Änderungen in den Betriebsparametern beteiligt.
+\par
+Die Bereiche ähnlicher Neutronenproduktion im SCM und MPM
+über"-wie"-gen, aber dennoch ist der Trend zu höheren Werten im
+SCM erkennbar. Die Entladung mit maximaler Pulsanzahl erfolgte im
+SCM und die Entladungen mit minimaler Pulsanzahl erfolgten im MPM.
+Das häufigste Intervall liegt im SCM bei einer höheren
+Neutronenproduktion als beim MPM.
+\par
+Ein Vergleich der Histogramme bei den Gruppen nach Injektionszeit
+führt auf die entsprechenden Ergebnisse.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-09A}}
+  \caption{Histogramm der Pulse aus dem Silberaktivierungszähler mit der Intervallbreite 2000 Pulse.
+     Alle Entladungen sind zusammengefaßt.}
+  \label{fig:neutronen:statistikA}
+\end{figure}
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-09B}}
+  \caption{Histogramm der Pulse aus dem Silberaktivierungszähler mit der Intervallbreite 2000 Pulse.
+     Die Entladungen sind in zwei Gruppen nach dem Entladungsmodus SCM/MPM eingeteilt.}
+  \label{fig:neutronen:statistikB}
+\end{figure}
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-09C}}
+  \caption{Histogramm der Pulse aus dem Silberaktivierungszähler mit der Intervallbreite 2000 Pulse.
+     Die Entladungen sind in zwei Gruppen nach der effektiven Injektionszeit \teff eingeteilt.}
+  \label{fig:neutronen:statistikC}
+\end{figure}
+%
+\par
+Die Ab"-hän"-gig"-keit der Neutronenproduktion von der dem Anteil
+des Injektionsgases ist deutlich zu trennen von der
+Ab"-hän"-gig"-keit der Neutronenproduktion von der Schichtbildung.
+Bei konstanten Betriebsparametern zeichnen sich gute Entladungen
+mit guter Schichtbildung durch vergleichsweise hohe
+Neutronenproduktion und hohe
+Rönt"-gen"-strah"-lungs"-in"-ten"-si"-tät aus. Bei Variation der
+Betriebsparameter, z.B. Vergrößerung der Injektionszeit, kann die
+Neutronenproduktion reduziert werden, aber die
+Röntgenstrahlungsintensität zunehmen.
+\par
+Der Einfluß der Schuß-zu-Schuß Schwankungen auf die Neutronenproduktion
+und den Entladungsmodus wurde bereits in Kapitel
+\vref{sec:uebergangsbereich} behandelt. Im Übergangsbereich zwischen
+SCM und MPM entscheiden diese Schwankungen über den resultierenden
+Modus. Bei \glqq guten\grqq\ Entladungen ist die Neutronenproduktion
+hoch und der SCM ist sichtbar, bei \glqq schlechten\grqq\ Entladungen
+ist die Neutronenproduktion deutlich geringer und der MPM ist sichtbar.
+Wie \glqq gut\grqq\ bzw. \glqq schlecht\grqq\ eine Entladung sein muß,
+entscheiden die Betriebsparameter.
+%
+\par
+Zeitaufgelöst, mit der Photomultiplier/Szintillator-Kombination (side
+on, Abstand \wert{0.7}{m}) gemessen, ergeben sich auch Unterschiede
+zwischen dem SCM und dem MPM. Das Integral des Signals zeigt die
+gleichen Effekte, die auch der Siber\-akti\-vierungs\-zähler mißt.
+Daher wurden die Signale auf die gleiche Fläche normiert, damit die
+Unterschiede im Zeitverhalten besser sichtbar werden. Zuvor wurde noch
+eine Nullmessung subtrahiert, weil die kleinen Signale (um
+\wert{0.5}{V}) einen systematischen Fehler durch Einkoppeln der
+Kondensatorbatteriespannung zeigten.
+\par
+Der Mittelwert der Breite der Pulse (FWHM) bei Entladungen im SCM ist
+mit \wert{(66 \pm 3)}{ns} um \wert{16}{ns} größer als der Mittelwert im
+MPM mit \wert{50 \pm 3}{ns}.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-12A}}
+  \caption{Signale der Photomultiplier/Szintillator-Kombination. Alle Signale
+     sind auf die gleiche Fläche normiert.}
+  \label{fig:plots:pmalle}
+\end{figure}
+%
+\par
+Die Abbildung \vref{fig:plots:pmalle} zeigt in einem Plot alle
+Signale der SCM bzw. der MPM Entladungen. Es ist sichtbar, daß die
+Schwankungen im SCM kleiner sind als im MPM. Der Startzeitpunkt
+der Pulse schwanken im SCM und in MPM im Bereich \wert{727 -
+804}{ns}. Die Endzeitpunkte liegt beim SCM in einem etwas späteren
+Intervall \wert{821-878}{ns} gegen \wert{804-859}{ns}.
+\par
+Der Abbildung \vref{fig:plots:pmmittel} zeigt den Mittelwert über
+alle Signale im SCM bzw. MPM. Die mittleren Pulse sind aufgrund der
+Unterschiede zwischen den Einzelpulsen verbreitert. Die Verbreiterung
+beträgt beim SCM \wert{23}{ns} und beim MPM \wert{30}{ns}. Dies ist
+ein weiteres Zeichen dafür, daß der SCM die bessere Reproduzierbarkeit
+besitzt.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-12B}}
+  \caption{Mittelwert der normierten Signale der PM/Szintillator-Kombination
+     im Zeitbereich mit der maximalen Kompression. Die FWHM beträgt im MPM
+     \wert{80}{ns} und \wert{89}{ns} im SCM.}
+  \label{fig:plots:pmmittel}
+\end{figure}
+%
+\par
+Das Maximum im MPM ist um \wert{14}{ns} nach hinten verschoben. Eine
+Verschiebung um ca. \wert{10}{ns} tritt nicht nur beim PM-Signal auf,
+auch beim Spannungssignal ist diese Verschiebung sichtbar.
+%
+\beginsubsection{Pinchdynamik}
+%
+Die Abbildung \ref{fig:plots:ualle} und \vref{fig:plots:umittel} zeigen
+die gemittelten Kurven der Spannungssignale von Entladungen im MPM bzw
+SCM.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-12C}}
+  \caption{Gemittelte Spannungssignale für jeden Entladungsmodus.}
+  \label{fig:plots:ualle}
+\end{figure}
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-12D}}
+  \caption{Gemittelte Spannungssignale für jeden Entladungsmodus im
+     Zeitbereich mit der maximalen Kompression.}
+  \label{fig:plots:umittel}
+\end{figure}
+%
+\par
+Das Maximum des Spannungsspikes beim Pinch ist im MPM
+\wert{10}{ns} später als beim SCM. Bis zur Pinchphase zeigen die
+Kurven der Spannung alle einen ähnlichen Verlauf.
+\par
+Für die folgende Tabelle \vref{tab:zeit:spannungspeak} wurden die
+Zeitpunkte der Pinchspannungen bei den einzelnen Signalen gemessen.
+Danach wurden die Zeitpunkte entsprechend der aufgeführten Gruppe
+gemittelt.
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|c|c|}
+  \hline
+     Gruppe                                 & minimal        & maximal        & Mittelwert \\
+  \hline
+     alle Entladungen                       & \wert{754}{ns} & \wert{812}{ns} & \wert{776 \pm 2}{ns} \\
+  \hline
+     Entladungen im SCM                     & \wert{754}{ns} & \wert{800}{ns} & \wert{772 \pm 3}{ns} \\
+     Entladungen im MPM                     & \wert{756}{ns} & \wert{812}{ns} & \wert{780 \pm 3}{ns} \\
+  \hline
+     Injektionszeit \teff \wert{< 3.5}{ms}  & \wert{754}{ns} & \wert{812}{ns} & \wert{777 \pm 3}{ns} \\
+     Injektionszeit \teff \wert{\ge 3.5}{ms}& \wert{756}{ns} & \wert{800}{ns} & \wert{775 \pm 3}{ns} \\
+  \hline
+  \end{tabular}
+  \caption{Zeitpunkt des Spannungsspikes bezogen auf Zeitpunkt der Triggerung der Anlage (inkl.
+           Laufzeiten). Minimaler, maximaler und Mittelwert von alle Entladungen einer Gruppe.}
+  \label{tab:zeit:spannungspeak}
+\end{table}
+%
+\par
+Die Zeitdifferenzen zwischen SCM und MPM beträgt \wert{8}{ns} = $2.7\
+\cdot$ Meßunsicherheit. Dieser Effekt kann nicht durch dir vergrößerte
+Argonmenge erklärt werden, weil die Gruppen, nach Injektionszeit
+getrennt, keine signifikante Abweichung vom Mittelwert über alle
+Entladungen zeigen. Bei Entladungen im SCM muß es also einen
+Mechanismus geben, der die Kompression früher anhält als Entladungen im
+MPM. Der im Kapitel \vref{sec:mechanismus} vorgeschlagene
+Stabilisierungsmechanismus hat eine solche Wirkung.
+\par
+Die $\rm\dot{I}$-Signale zeigen auch eine Tendenz zur verringerten
+Dynamik bei Entladungen im SCM, aber nicht so signifikant, wie bei
+den $U$-Signalen.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-12E}}
+  \caption{Gemittelte $\rm\dot{I}$-Signale für jeden Entladungsmodus.}
+  \label{fig:plots:ialle}
+\end{figure}
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C6-12F}}
+  \caption{Gemittelte $\rm\dot{I}$-Signale für jeden Entladungsmodus im
+     Zeitbereich mit der maximalen Kompression.}
+  \label{fig:plots:imittel}
+\end{figure}
+%
+\par
+Die Abbildungen \ref{fig:plots:ialle} und \vref{fig:plots:imittel}
+zeigen die gemittelten Kurven bei den betrachteten Entladungen.
+\par
+Die gemittelten $\rm\dot{I}$-Signale zeigen: das Minimum wird beim MPM
+\wert{8}{ns} nach dem Minimum in SCM erreicht.Der Minimalwert ist beim
+MPM um \wert{0.7}{kA/ns} geringer als beim SCM. Der längere und tiefere
+Stromeinbruch beim MPM deutet auf eine längere und größere Kompression
+der Plasmas. Auch hier wir angedeutet, daß es bei Entladungen im SCM
+einen Mechanismus gibt, der der Kompression entgegenwirkt.
+\par
+Die genaue Auswertung zeigt aber, daß die bei den $\rm\dot{I}$-Signalen
+auftretenden Unterschiede genau auf der Grenze der statistischen
+Signifikanz liegen.
+\par
+Die Auswertung des Zeitpunktes und des Werts des
+$\rm\dot{I}$-Minimums bei den einzelnen Entladungen sind in den
+Tabellen \ref{tab:zeit:stromminimum} und
+\vref{tab:wert:stromminimum} zusammengefaßt.
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|c|c|}
+  \hline
+     Gruppe                                 & minimal        & maximal        & Mittelwert \\
+  \hline
+     alle Entladungen                       & \wert{736}{ns} & \wert{792}{ns} & \wert{759 \pm 2}{ns} \\
+  \hline
+     Entladungen im SCM                     & \wert{736}{ns} & \wert{780}{ns} & \wert{756 \pm 3}{ns} \\
+     Entladungen im MPM                     & \wert{738}{ns} & \wert{792}{ns} & \wert{761 \pm 3}{ns} \\
+  \hline
+     Injektionszeit \teff \wert{< 3.5}{ms}  & \wert{738}{ns} & \wert{792}{ns} & \wert{762 \pm 3}{ns} \\
+     Injektionszeit \teff \wert{\ge 3.5}{ms}& \wert{736}{ns} & \wert{786}{ns} & \wert{756 \pm 3}{ns} \\
+  \hline
+  \end{tabular}
+  \caption{Zeitpunkt des Minimums in $\rm\dot{I}$-Signals bezogen auf Zeitpunkt der Triggerung der Anlage
+     (inkl. Laufzeiten). Minimaler, maximaler und Mittelwert von alle Entladungen einer Gruppe.}
+  \label{tab:zeit:stromminimum}
+\end{table}
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|c|c|}
+  \hline
+     Gruppe                                 & minimal             & maximal            & Mittelwert \\
+  \hline
+     alle Entladungen                       & \wert{-11.4}{} & \wert{-6.3}{} & \wert{-8.7 \pm 0.2}{} \\
+  \hline
+     Entladungen im SCM                     & \wert{-11.2}{} & \wert{-7.3}{} & \wert{-8.4 \pm 0.3}{} \\
+     Entladungen im MPM                     & \wert{-11.4}{} & \wert{-6.3}{} & \wert{-9.0 \pm 0.3}{} \\
+  \hline
+     Injektionszeit \teff \wert{< 3.5}{ms}  & \wert{-11.3}{} & \wert{-6.3}{} & \wert{-8.3 \pm 0.3}{} \\
+     Injektionszeit \teff \wert{\ge 3.5}{ms}& \wert{-11.4}{} & \wert{-7.3}{} & \wert{-9.3 \pm 0.3}{} \\
+  \hline
+  \end{tabular}
+  \caption{Wert des Minimums im $\rm\dot{I}$-Signal in der Einheit ka/ns.
+           Minimaler, maximaler und Mittelwert von alle Entladungen einer Gruppe.}
+  \label{tab:wert:stromminimum}
+\end{table}
+%
+\par
+Der Mittelwert bei den verschiedenen Gruppen sowohl vom Zeitpunkt als
+auch vom Wert des $\rm\dot{I}$-Minimums liegen um den Mittelwert aller
+Entladungen innerhalb der Meßunsicherheit.
+\par
+Umfangreichere Meßreihen um die gefundenen Tendenzen, die alle mit dem
+vorgeschlagenen Stabilisierungsmechanismus übereinstimmen, waren
+geplant, konnten aber aufgrund kurzlebiger Isolatoren nicht
+durchgeführt werden. Für eine ausreichende Anzahl von Entladungen ist
+ein Isolator mit überdurchschnittlicher Lebensdauer erforderlich.

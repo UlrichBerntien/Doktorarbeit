@@ -1,0 +1,424 @@
+%
+%  Theoretische Überlegungen zum stabilen Säulenmodus
+%
+\beginsection{Möglicher Stabilisierungsmechanismus}
+\label{sec:mechanismus}
+%
+Ein theoretisches Modell der Fokusentladung liefert im optimalen Fall
+aus den Betriebsparametern die Daten der Entladung, insbesondere die
+Entscheidung zwischen MPM und SCM. Die Entwicklung eines solchen
+Modells ist wünschenswert, kann aber nicht in dieser experimentell
+ausgerichteten Arbeit erfolgen.
+\par
+Diese Arbeit beschränkt sich auf die Vorstellung eines möglichen
+Stabilisierungsmechanismus, der von Kies \cite{kies:99} für den
+SCM vorgeschlagen wurde. Die Basis für diesen Mechanismus wurde in
+der Arbeit von Deutsch \cite{deutsch:87} gelegt. Dort wurde die
+Neutronenproduktion und die Stabilisierung des Pinches am SPEED~2
+Experiment mit Deuteriumgas behandelt. Die ausgeführten Ideen
+mußten auf eine Entladung mit Deuterium/Hoch-Z-Gasgemisch
+über"-tra"-gen werden.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C7-01}}
+  \caption{Bei der theoretischen Behandlung der Entladung wird vereinfacht
+    die Kompressionsphase der Pinchentladung betrachtet. Die
+    Plasmaschicht, getrieben vom Magnetfeld, läuft in das Gas und bildet
+    einen z-Pinch. Nach \cite{deutsch:87}; vgl. Abbildung \vref{fig:fokusschema}.}
+  \label{fig:modell}
+\end{figure}
+%
+\par
+Die Wirkung des Stabilisierungsmechanismus ist nur in dem Bereich des
+Fokus (3-4) interessant. Die Zündung (1) und die Laufphase (2) der
+Entladung wird bei diesem Modell nicht beschrieben. Die Abbildung
+\vref{fig:modell} zeigt die Vereinfachung auf die Modellsituation. Die
+Krümmung der Plasmaschicht wird vernachlässigt, der Strom fließt über
+eine plane Kathode ab. Damit entsteht ein Modell, das einem z-Pinch
+entspricht.
+\par
+Der Strom fließt in einer Plasmaschicht. Diese wird getrieben von einem
+magnetischen Kolben (Zone I.). Vor der Plasmaschicht läuft eine
+Schockfront in das Gas (Zone II.). In der Schockfront werden die
+Deuteriummoleküle dissoziiert und ionisiert, ebenso werden die Neon-
+oder Argon-Atome ionisiert. Mit der radialen Schichtgeschwindigkeit
+$v_s$ (typisch \ewert{1}{5}{m/s}) komprimiert sich der Plasmazylinder
+auf die Achse. Dabei werden die Ionen und Elektronen in der
+Plasmaschicht gesammelt und mitgeführt, so daß kein Gas zurückbleibt
+(Zone II.). Dieses ist das sogenannte Schneepflugmodell. Die
+Gleichungen für Massen-, Impuls- und Energieerhaltung führen zur
+mathematischen Darstellung des Modells \cite{deutsch:86}. Es liefert
+brauchbare Abschätzungen für die Dichte (typisch \ewert{n_e =
+1}{24}{m$^{-3}$}) und Temperatur (typisch \wert{kT_e = 10}{eV}) der
+Plasmaschicht, aber keinen Stabilisierungsmechanismus.
+\par
+Genauere Untersuchungen \cite{deutsch:87} zeigen, daß nicht alle
+Ionen in der Plas"-ma"-schicht bleiben. Das Verhalten einzelner
+Deuteronen im Deu"-te"-rium-Pinch wurde mit einer
+Monte--Carlo--Simulation betrachtet. Dabei wurde (pro
+Simulationslauf) nur die Bewegung eines einzelnen Ions betrachtet,
+alle anderen Ionen wurden als Hintergrund über die Ionendichte
+berücksichtigt. Die Abbildung \ref{fig:deuteronbahnen} zeigt
+Beispiele für die berechneten Bahnen, dabei wurden Stöße
+vernachlässigt und der Plasmazylinder durch zwei ebene
+Plasmaschichten ersetzt.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C7-02}}
+  \caption{Bahnen von Deuteronen im ebenen Modell mit \wert{B=5}{T},
+  \ewert{v_s=1}{5}{m/s} und $v_{th}=0.1 \cdot v_s$. Startposition der
+  Schicht \wert{0.02}{m}, Startpositionen der Deuteronen (1)
+  \wert{0.027}{m}, (2) \wert{0.02}{m}, (3) \wert{0.0197}{m},
+  (4) \wert{0.015}{m}. Aus \cite{deutsch:87}.}
+  \label{fig:deuteronbahnen}
+\end{figure}
+%
+\par
+Auffällig ist das Verhalten der Deuteronen (3) und (4), sie werden von
+dem magnetischen Kolben reflektiert. Bei jeder Reflektion im Magnetfeld
+erhöht sich ihre Geschwindigkeit um $2v_s$, dazu kommt noch ein
+Beschleunigungsanteil aus dem elektrischen Feld in der Plasmaschicht
+senkrecht zur Bewegung der Schicht. Dieser Mechanismus wird \glqq
+gyro-reflection acceleration mechanism\grqq\ (GRAM) genannt. Die
+Abbildung \vref{fig:deuteronenergie} zeigt die Zunahme der kinetischen
+Energie dieser Deuteronen.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C7-03}}
+  \caption{Kinetische Energie der Ionen aufgetragen gegen die Zeit.
+  Energie normiert auf $E_0=\frac{1}{2}mv_s^2$. Die Nummern entsprechen
+  denen aus Abbildung \ref{fig:deuteronbahnen}.
+  Aus \cite{deutsch:87}.}
+  \label{fig:deuteronenergie}
+\end{figure}
+%
+\par
+Näherungsweise verhält sich die kinetische Energie wie
+\par
+$$ E_{\rm kin}\propto \frac{1}{r^2}. $$
+\par
+Stöße mit Elektronen, Ionen und Atomen im Plasma und im Füllgas führen
+zu einer Bremsung dieser schnellen Ionen. Eine ausreichende freie
+Weglänge ist daher eine Bedingung für diesen Mechanismus.
+\par
+Haben sich die schnellen Deuteronen gebildet, so stabilisieren sie die
+Plasmasäule. Führt eine kleine Störung zu einer Verringerung des Radius
+r, so erhöht sich der Magnetfelddruck mit $1/r^2$. Der Plasmadruck
+erhöht sich aufgrund der vergrößerten Teilchendichte mit $1/r^\alpha,
+\alpha > 0$ und aufgrund des GRAMs mit $1/r^2$, also zusammen
+proportional zu $1/r^{(2+\alpha)}$. Die Erhöhung des Plasmadrucks kann
+die Störung ausgleichen, weil der Plasmadruck stärker als der
+Magnetfelddruck mit abnehmendem Radius $r$ ansteigt.
+\par
+Wenn der GRAM bei Entladungen im SCM auftritt, dann kann dieser
+Mechanismus die Stabilisierung der Plasmasäule erklären. Damit der GRAM
+auftreten kann, muß ein kritischer Strom $I_C$ erreicht werden, müssen
+die Ionen das Plasma und das Gas durchdringen können.
+\par
+Der kritische Strom $I_C$ ergibt sich aus einer Bedingung für den
+Krüm"-mungs"-ra"-dius $\rho$ der Ionenbahn bei der Reflexion am
+magnetischen Kolben. Dieser Radius $\rho$ muß kleiner sein als der
+Krümmungsradius $R^\ast$ der Schicht. Näherungsweise ist der
+Krümmungsradius $\rho$ gleich dem Lamorradius $r_L$. Mit den
+Beziehungen
+\par
+$$ r_L = \frac{mv}{qB} \quad,\quad B = \frac{\mu_0 I}{2 \pi R^\ast} $$
+\par
+($m$ = Ionenmasse, $q$ = Ionenladung, $v$ = Ionengeschwindigkeit)
+ergibt sich der kritischen Strom $I_C$ aus
+\par
+$$ I > I_C = \frac{6\pi}{\mu_0} \cdot \frac{m}{q} \cdot v_s .$$
+\par
+Dabei wurde für die Teilchengeschwindigkeit bei der ersten Reflexion $v
+= 3 \cdot v_s$ angenommen.
+\par
+Die Schichtgeschwindigkeit $v_s$ liegt zwischen \ewert{1}{5}{m/s}
+im Deuterium-Hoch-Z-Gasgemisch und \ewert{3}{5}{m/s} in reinem
+Deuterium-Gas. Neben den Deuteronen kommen auch die Neon-Ionen
+dreifach geladen und die Argon-Ionen fünffach geladen für den GRAM
+in Betracht.
+\par
+Die Tabelle \vref{tab:kritischerStrom} gibt die kritischen
+Stromstärken in den verschiedenen Situationen an.
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|c|c|c||c|c|}
+    \hline
+    Ion & Masse & Ladung & \ewert{v_s=1}{5}{m/s}  & \ewert{v_s=3}{5}{m/s} \\
+    \hline
+    D$^+$      &  2u & +1e & \wert{I_C = \ 31}{kA}  &  \wert{I_C = \ 93}{kA} \\
+    Ne$^{3+}$  & 20u & +3e & \wert{I_C = 104}{kA} & \wert{I_C = 312}{kA} \\
+    Ar$^{5+}$  & 40u & +5e & \wert{I_C = 125}{kA} & \wert{I_C = 375}{kA} \\
+  \hline
+  \end{tabular}
+  \caption{Kritischer Strom $I_C$ für das Einsetzen des GRAMs bei
+  verschiedenen Ionen und verschiedenen Schichtgeschwindigkeiten $v_s$.}
+  \label{tab:kritischerStrom}
+\end{table}
+%
+\par
+Beim Plasmafokus SPEED~2 beträgt der Strom im Maximum \wert{\ge 1}{MA}.
+Das Strommaximum war bei den hier vorgestellten Experimenten ca.
+\wert{150}{ns} vor der maximalen Kompression. Daher wurde der kritische
+Strom $I_C$ immer deutlich vor der Bildung der Pinchsäule
+überschritten. Diese Bedingung für den GRAM ist bei allen untersuchten
+Betriebsparametern erfüllt worden.
+\par
+Die Reflexion der Ionen am magnetischen Kolben ist also möglich. Die
+schnellen Ionen müssen nach einer Reflexion die Plasmaschicht, das Gas
+im Zentrum (Zone I. in Abbildung \vref{fig:modell}) und nochmals die
+Plasmaschicht durchdringen bis die nächste Reflexion erfolgt. Der
+Energieverlust auf diesem Weg muß deutlich kleiner sein als der
+Energiegewinn beim Reflexionsvorgang, damit der GRAM einsetzen kann.
+\par
+Während die Dicke der Plasmaschicht konstant typisch \wert{0.1}{mm}
+beträgt, ändert sich die Weglänge durch das Gas erheblich. Damit die
+Energie der schnellen Ionen die Pinchsäule stabilisieren kann, muß der
+Durchmesser der Plasmazylinder $d^\ast$ beim Einsetzen des GRAMs um den
+Faktor 3 größer sein als der Pinchdurchmesser $d_p$. Bei einem
+maximalen $d_p$ von \wert{2}{mm} ergibt sich \wert{d^\ast = 6}{mm}. Die
+Ionen müssen also mindestens eine \wert{6}{mm} dicke Gasschicht
+durchdringen.
+\par
+Der Einfluß des Füll- und Injektionsgases auf den Strahl schneller
+Ionen kann mit Hilfe eines frei verfügbaren Programms abgeschätzt
+werden. Das Programm
+TRIM\footnote{\url{http://www.research.ibm.com/ionbeams}} führt
+Monte-Carlo-Simulationen durch, bei denen die Reichweite von
+Ionenstrahlen in Gasen und Fest"-kör"-pern bestimmt werden.
+Grundlage des Programms ist die abgeschirmte
+Coulomb-Wechselwirkung der Atome mit den schnellen Ionen
+\cite{ziegler:96}.
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Gas      & Reichweite von              & Reichweite von             & Reichweite von \\
+             & D-Ionen mit                 & Ne-Ionen mit               & Ar-Ionen mit \\
+             & \wert{E_{\rm kin}=1.3}{keV} & \wert{E_{\rm kin}=13}{keV} & \wert{E_{\rm kin}=25}{keV} \\
+    \hline
+    H        & \wert{72}{mm}       & \wert{> 100}{mm}  & \wert{> 100}{mm} \\
+    H + Ne   & \wert{17}{mm}       & \wert{\ \ \ \ 15}{mm}     & \wert{\ \ \ \ 16}{mm} \\
+    H + Ar   & \wert{11}{mm}       & \wert{\ \ \ \ 12}{mm}     & \wert{\ \ \ \ 13}{mm} \\
+  \hline
+  \end{tabular}
+  \caption{Reichweiten von schnellen Ionen in Gasmischungen mit einer
+  Teilchendichte von \ewert{n = 1}{23}{m$^{-1}$}.
+  Die Ionen sind vollständig ionisiert angenommen.}
+  \label{tab:IonenReichweiten}
+\end{table}
+%
+Mit dem TRIM Programm ermittelte Reichweiten für die interessierenden
+Ionen sind in der Tabelle \vref{tab:IonenReichweiten} zusammengefaßt.
+Deuterium ist in dem Programm nicht vorgesehen, daher wurde auf
+Wasserstoff ausgewichen. Dieses ist ohne Bedeutung für die Ergebnisse,
+weil die Hoch-Z-Gase die Abbremsung dominieren. Die Geschwindigkeit der
+Ionen wurde auf \ewert{1}{5}{m/s} gesetzt, die untere Grenze der zu
+erwartenden Geschwindigkeiten. Der Fülldruck des Wasserstoffs wurde auf
+\wert{4}{hPa} bei \wert{20}{$^\circ$C} gesetzt. Die Teilchendichte von
+Neon bzw. Argon wurde gleich der Teilchendichte des Wasserstoffs
+gesetzt. Diese Dichte tritt bei ca. \ewert{5}{5}{Pa} Injektionsdruck
+und \wert{5}{ms} effektive Injektionszeit beim Experiment auf.
+\par
+Die Bremswirkung von Wasserstoff bzw. Deuterium ist so gering, daß der
+Einfluß des Gases auf die schnellen Ionen vernachlässigt werden kann,
+wie es auch bei den Monte-Carlo-Simulationen \cite{deutsch:87} gemacht
+wurde. Der Einfluß des Injektionsgases auf die schnellen Deuteronen ist
+nicht mehr in allen Fällen vernachlässigbar. Insbesondere ist bei Argon
+und hohen Injektionsdrücken eine Hemmung des GRAMs für die Deuteronen
+möglich. Für schnelle Neon- bzw. Argon-Ionen ist wahrscheinlich auch
+der Einfluß des Hoch-Z-Gases vernachlässigbar, weil nicht vollständig
+ionisierte Atome, sondern nur 3- bis 5-fach ionisierten Atome zu
+erwarten sind. Für diese ist die Coulomb-Wechselwirkung mit den
+Gas-Atomen deutlich geringer.
+\par
+Damit ist der Einfluß des D$_2$-Gases und des Injektionsgases auf die
+schnellen Ionen abgeschätzt. Es bleibt der Einfluß der Plasmaschichten,
+die von den Ionen zweimal pro Reflexion durchlaufen werden. Formeln zur
+Berechnung des Bremsvermögens eines vollständig ionisierten
+Wasserstoffplasmas werden in \cite{peter:91}\footnote{Der Artikel
+benutzt weitgehend dimensionslose Größen. In der
+Transformationsvorschrift (8) hat sich ein Schreibfehler
+eingeschlichen: $k_D$ ist als $\lambda_D$ zu lesen.} angegeben. Im Fall
+von einem Krypton-Ionenstrahl wurde eine gute Übereinstimmung der
+Formeln mit den experimentellen Werten gefunden \cite{jacoby:95}.
+\par
+Für die Plasmaschicht gibt es Schätzwerte, aber speziell für die
+Endphase der Kompression auch Meßwerte. Spektrometrisch wurde ca.
+\wert{20}{ns} vor der maximalen Kompression die Elektronentemperatur
+\wert{kT_e = 300}{eV} und die Elektronendichte \ewert{n_e =
+2.5}{26}{m$^{-3}$} bestimmt (siehe Seite \pageref{fig:spektrum}).
+Aufgrund der Bedingung $d^\ast / d_p > 3$ für die Kompression (s.o.)
+müssen spätestens zu diesem Zeitpunkt Ionen mit dem GRAM beschleunigt
+werden.
+\par
+Aus den Meßwerten folgen die Kenngrößen:
+  Plasmafrequenz $\omega_p =$ \ewert{9.4}{9}{s$^{-1}$},
+  mittlere thermische Geschwindigkeit der Elektronen $v_{th} =$ \ewert{7.3}{6}{m/s},
+  mittlere thermische Geschwindigkeit der Deuteronen $v_{th,i} =$ \ewert{1.2}{5}{m/s}
+  (Schätzung über $T_i = T_e$),
+  Debye-Länge $\lambda_D =$ \ewert{8.1}{-9}{m} und
+  Anzahl der Elektronen in der Debye-Kugel $N_D =$ \ewert{5.6}{2}{}.
+\par
+Die Geschwindigkeit der Ionen wurde auf \ewert{v_p = 5}{5}{m/s}
+gesetzt, weil zu diesem Zeitpunkt schon erste Reflexionen stattgefunden
+haben können. Die Geschwindigkeit der schnellen Ionen liegt damit
+deutlich unter der thermischen Geschwindigkeit der Elektronen $v_p \ll
+v_{th}$. Benutzt wurde daher die angegebene Formel für geringe
+Geschwindigkeiten und mittlere Dichten:
+\par
+$$ - \frac{dE}{dx} = \frac{kT_e}{\lambda_D}
+\frac{Z^2N_D}{12\pi\sqrt{2\pi}} \left[ (\ln K^2 -1)\left(
+\frac{v_p}{v_{th}} \right) - \left( \frac{3}{10} \ln K^2 -
+\frac{8}{5} + \frac{\pi}{20} \right) \left( \frac{v_p}{v_{th}}
+\right)^3 \right] $$
+\par
+mit $$ Z = \frac{4\pi}{3} \frac{Z_{\rm eff}}{N_D} \quad {\rm
+und}\quad K = \frac{8\pi}{Z}. $$
+\par
+Die berechneten Werte sind in der Tabelle \vref{tab:ElektronenBremsung}
+aufgeführt.
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|r|c|c|c|}
+    \hline
+       & D$^+$ & Ne$^{3+}$ & Ar$^{5+}$ \\
+    \hline
+    Bremsvermögen: $-\frac{dE}{dx}=$ & \wert{17}{$\frac{\rm keV}{\rm mm}$} & \wert{98}{$\frac{\rm keV}{\rm mm}$} &  \wert{890}{$\frac{\rm keV}{\rm mm}$} \\
+    kin. Energie: $E_{\rm kin}=$ & \wert{6.5}{keV} & \wert{65}{keV} & \wert{130}{keV} \\
+    Bremsweg auf $\frac{1}{2} E_{\rm kin}$: $l_{1/2}=$ & \wert{0.19}{mm} & \wert{0.33}{mm} & \wert{0.07}{mm} \\
+  \hline
+  \end{tabular}
+  \caption{Bremsung der schnellen Ionen durch die Elektronen in der Plasmaschicht}
+  \label{tab:ElektronenBremsung}
+\end{table}
+%
+Das Verhältnis von Ladung zur Ionenmasse ($q^2/m$) ist für die
+Neon-Ionen am günstigsten, sie haben daher die größte Reichweite. Die
+Energieverluste für die schnellen Ionen durch die Plasmaelektronen sind
+hoch, aber diese Elektronendichte wird erst zum Ende der
+Kompressionsphase erreicht. Ionen, die bereits eine höhere
+Geschwindigkeit erreicht haben, werden relativ zu ihrer kinetischen
+Energie schwächer gebremst ($ E_{\rm kin} \propto v_p^2$\
+,$-\frac{dE}{dx} \propto v_p$ für $v_p \ll v_{th}$ ). Das Bremsvermögen
+$-\frac{dE}{dx}$ der Plasmaelektronen ist maximal bei $v_p \approx 2
+\cdot v_{th}$. Die schnellen Ionen können bis in diesen Bereich
+beschleunigt werden, wenn sie nicht in der Anfangsphase der
+Beschleunigung thermalisiert wurden (Runaway-Effekt).
+\par
+Neben der Bremsung durch die Elektronen erfahren die schnellen Ionen
+auch eine Bremsung durch die Deuteronen des Plasmas. Die thermische
+Geschwindigkeit der Deuteronen liegt mit \ewert{v_{th,i} = 1}{5}{m/s}
+im Bereich der Geschwindigkeit der schnellen Ionen zu Anfang ihrer
+Beschleunigung. Daher ist das Bremsvermögen durch die Deuteronen
+besonders hoch, wie die Zahlen in der Tabelle
+\vref{tab:DeuteronenBremsung} zeigen.
+\par
+Das Bremsvermögen durch die Ionen des Plasmas für $v_{th,i} \ll v_p \ll
+v_{th}$ wird angegeben mit
+\par
+$$ - \frac{dE}{dx} = \frac{kT_e}{\lambda_D} \left[
+\frac{Z^2N_D}{12\pi\sqrt{2\pi}} \left( \frac{v_p}{v_{th}} \right)
+\ln( \frac{64\pi^2}{Z^2} ) + \frac{Z^2N_D}{4\pi M} \left(
+\frac{v_{th}}{v_p} \right)^2 \ln( M \frac{8\pi}{Z} ) \right] $$
+wobei $M$ die Ionenmasse in $m_e$-Einheiten ist.
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|r|c|c|c|}
+    \hline
+       & D$^+$ & Ne$^{3+}$ & Ar$^{5+}$ \\
+    \hline
+    Bremsvermögen: $-\frac{dE}{dx}=$ & \wert{98}{$\frac{\rm keV}{\rm mm}$} & \wert{0.83}{$\frac{\rm MeV}{\rm mm}$} &  \wert{2.2}{$\frac{\rm MeV}{\rm mm}$} \\
+    kin. Energie: $E_{\rm kin}=$ & \wert{6.5}{keV} & \wert{65}{keV} & \wert{130}{keV} \\
+    Bremsweg auf $\frac{1}{2} E_{\rm kin}$: $l_{1/2}=$ & \wert{0.03}{mm} & \wert{0.04}{mm} & \wert{0.03}{mm} \\
+  \hline
+  \end{tabular}
+  \caption{Bremsung der schnellen Ionen durch die Deuteronen in der Plasmaschicht}
+  \label{tab:DeuteronenBremsung}
+\end{table}
+%
+Wieder sind die schnellen Neon-Ionen durch ihr $q^2/m$-Verhältnis
+bevorzugt. Die Bremsung durch die Deuteronen stellt eine erhebliche
+Behinderung des GRAMs dar, aber nur bei den ersten Reflexionen. Haben
+die Ionen dieses Hindernis überwunden, nimmt das Bremsvermögen der
+Deuteronen mit zunehmender Geschwindigkeit $v_p$ schnell ab.
+\par
+Damit der GRAM wirksam werden kann muß er also früher, bei geringeren
+Deuteronendichten, einsetzten ($-\frac{dE}{dx} \propto n_i$). Da der
+kritische Strom $I_C$ schon früh erreicht wird, kann auch der GRAM früh
+einsetzen.
+\par
+Im Plasma der Schicht wird nicht nur Deuteriumgas, sondern auch das
+Injektionsgas gesammelt. Am Anfang der Kompression sind nur Deuteronen
+in dem Plasma, aber zum Ende (Durchmesser Injektionsgasstrom \wert{<
+2}{cm}) kommen auch Hoch-Z-Ionen dazu. Der Anteil der Hoch-Z-Ionen
+bleibt gering, $\frac{n_D}{n_X} \approx (\frac{10cm}{2cm})^2 = 25$.
+Ihre höhere Ladung kompensiert die geringe Dichte nicht vollständig.
+Das Bremsvermögen ($-\frac{dE}{dx}$) wird also am Ende der Kompression
+unterhalb des Bremsvermögens der Deuteronen liegen. (Die Arbeit von
+Peter \cite{peter:91} beschränkt sich auf Wasserstoffplasmen.) Die
+geringe thermische Geschwindigkeit der schweren Ionen führt zu einem
+gegen die Deuteronen verschobenem Maximum des Bremsvermögens bei $v_p
+\approx 2 \cdot v_{th,i}$.
+%
+\par
+Eine ausführliche theoretische Behandlung kann in dieser Arbeit, wie
+schon anfangs erwähnt, nicht gegeben werden. Es fehlt die Betrachtung
+der Ionisation und Rekombination der schnellen Ionen im Plasma; es
+fehlt die Behandlung des azimutalen Runaways. Wesentlichen Effekte sind
+vermutlich erläutert worden. Weitergehende Betrachtungen müßten in
+Richtung einer Erweiterung der Simulationsrechnungen für den GRAM in
+Deuterium/Hoch-Z-Gemischen geführt werden. Diese Simulationen könnten
+auf den hier vorgestellten Effekten basieren, sie müßten den Einfluß
+der Neon- bzw. Argon-Teilchendichte auf die Effizienz des GRAMs zeigen.
+\par
+Anhand der Abschätzungen ist sichtbar geworden, daß der GRAM in dem
+hier untersuchten Arbeitsbereich des Plasmafokus SPEED~2 auftreten
+kann. Der kritische Strom $I_C$ wird für die Ionen, D$^+$, Ne$^{3+}$,
+Ar$^{5+}$ weit überschritten. Das Einsetzen des GRAMs kann durch das
+Bremsvermögen der Ionen in der Plasmaschicht verhindert werden. Auch
+können die Elektronen in der Plasmaschicht (und die Injektionsgasatome
+bzgl. D$^+$) die Effizienz dieses Mechanismus reduzieren. Die
+Abschätzungen zeigen die Möglichkeit der Grenze zwischen wirksamen GRAM
+und kein wirksamer GRAM im Bereich des typischen Arbeitsbereiches.
+Dieses deckt sich mit den experimentellen Ergebnissen in Kapitel
+\ref{sec:betriebsparameter}, die immer die Grenze zwischen SCM und MPM
+im Arbeitsbereich zeigen.
+\par
+Das größte Hindernis für den GRAM ist nach den Abschätzungen die
+Abbremsung in der Plasmaschicht. Damit wird die starke
+Ab"-hän"-gig"-keit vom Isolatorzustand plausibel, weil die Zündung
+der Entladung über der Isolatoroberfläche einen großen Einfluß auf
+die Schichtdicke hat.
+\par
+Unter bestimmten Umständen, die aufgrund der Abschätzungen plausibel
+sind, aber hier nicht exakt berechnet werden können, kann der GRAM zur
+Bildung einer stabilen Säule geführt haben. Dann aber können die
+schnellen Ionen durch die hohe Dichte der Plasmasäule abgebremst und
+thermalisiert werden. Dies führt dazu, daß das Magnetfeld die
+Plasmasäule weiter komprimiert und der beobachtete zweite
+Strahlungsausbruch im Röntgenbereich erfolgt (siehe Abschnitt
+\vref{sec:zweiteKompression}).
+\par
+Die schnellen Deuteronen zeigten sich bei Entladungen in reinem
+Deuterium auch durch ein deutlich früheres Einsetzen der
+Neutronenproduktion (Beam-Beam- und Beam-Target-Reaktionen)
+\cite{deutsch:87}. Dieses konnte bei Entladungen im SCM  nicht
+eindeutig beobachtet werden. Im Mittel setzte die Neutronenproduktion
+nur \wert{14}{ns} früher als beim MPM ein. Die Ursache dafür kann der
+Anteil der Neon- bzw. Argon-Ionen an der schnellen Ionenkomponente
+sein.

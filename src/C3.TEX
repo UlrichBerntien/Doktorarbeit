@@ -1,0 +1,506 @@
+%
+%  Beschreibung von SPEED 2
+%
+\beginsection{SPEED~2}
+\label{sec:speed2}
+%
+Der SPEED~2 ist die zweite Anlage aus der Serie der
+\underline{s}chnellen
+\underline{P}inch\underline{e}ntladungs\underline{e}xperimente in
+\underline{D}üsseldorf. Die Anlage wurde bereits 1985 in Betrieb
+genommen. Sie wird von der Fokusgruppe der Heinrich-Heine-Universität
+betrieben und ist auch noch heute in seinem Entladungscharakter
+einzigartig.
+\par
+Die hier beschriebene Variante der Anlage mit gepulstem Gaseinlaß für
+Hoch-Z-Gase wurde seit 1988 eingesetzt. Überwiegend wurde seit 1990 der
+MPM untersucht. Ab 1995 verschob sich der Schwerpunkt der Messungen auf
+den SCM.
+\par
+Die wichtigsten Daten des Treibers SPEED~2 sind in der Tabelle
+\vref{tab:treiberdaten} zusammengefaßt. Die Werte in der Spalte \glqq
+maximal\grqq\ beziehen sich auf das erreichbare Maximum des Treibers.
+Dabei werden aber die elektrischen Isolatoren des Gerätes und der
+eingebauten Kondensatoren bis an die Zerstörungsgrenze belastet. Diese
+Werte werden im typischen Betrieb nicht ausgenutzt und nur für
+spezielle Versuche annähernd erreicht.
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|c|c|}
+    \hline
+                      & maximal          & typisch                 \\
+    \hline
+    Bankenergie       & \wert{187}{kJ}   & \wert{67.5}{kJ}         \\
+    \hline
+    Ladespannung      & \wert{300}{kV}   & \wert{180}{kV}          \\
+    \hline
+    Pinchstrom        & \wert{2.5}{MA}   & \wert{1.0}{MA}         \\
+    \hline
+    Stromanstieg      & \wert{20}{kA/ns} & \wert{10}{kA/ns}        \\
+    \hline
+    Stromanstiegszeit & \multicolumn{2}{c|}{ \wert{400}{ns} }      \\
+    \hline
+    Kapazität         & \multicolumn{2}{c|}{ \wert{4.16}{$\mu$F} }  \\
+    \hline
+    Impedanz          & \multicolumn{2}{c|}{ \wert{60}{m$\Omega$} } \\
+    \hline
+  \end{tabular}
+  \caption{Elektrische Daten vom Experiment SPEED~2}
+  \label{tab:treiberdaten}
+\end{table}
+%
+\par
+Auffällig an den Daten ist die große Impedanz von \wert{60}{m$\Omega$}.
+Damit ist während der überwiegenden Zeit der Entladung die Impedanz des
+Treibers größer als die der Last (Plasma). Es handelt sich also um eine
+Stromquelle. (Bei einer stabilen Stromquelle ist immer $\rm R_{\rm
+innen} \gg \rm R_{\rm Last}$, bei einer stabilen Spannungsquelle ist
+immer $\rm R_{\rm innen} \ll \rm R_{\rm Last}$.)
+\par
+Der schnelle Stromanstieg wird durch einen sehr niederinduktiven Aufbau
+der Anlage erreicht. Die Plasmafokusanlage SPEED~2 wird in den
+folgenden Abschnitten dieses Kapitels \thesection\ beschrieben. Dabei
+wird die Anlage relativ detailliert beschrieben. So werden die nötigen
+Informationen für das Verständnis der einzelnen Betriebsparameter
+geliefert. Im Kapitel \vref{sec:betriebsparameter} wird dann
+vorgestellt, wie die Entladungsmodi von diesen Parametern bestimmt
+werden.
+%
+\beginsubsection{Treiber SPEED~2}
+%
+Das Experiment kann in zwei Funktionseinheiten aufgeteilt werden. Die erste
+Einheit ist der Treiber, der als Quelle den Strom möglichst schnell und stark
+in die Last treibt. Die zweite Einheit, die Last, ist das eigentliche
+Plasmaexperiment in einer z-Pinch- oder Fokus-Geometrie. In dieser Arbeit wird
+nur von Entladungen in Fokus-Geometrie berichtet.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C3-04}}
+  \caption{Schaltung eines Marx-Moduls des Treibers SPEED~2.
+      Der innere, rotationssymmetrische Aufbau der
+      Funkenstrecken ist schematisch wiedergegeben.}
+  \label{fig:modul}
+\end{figure}
+%
+\par
+Der Treiber SPEED~2 ist aus Marx-Modulen aufgebaut. Bei einem
+Marx-Modul werden Kondensatoren parallel aufgeladen und in einer
+Serienschaltung entladen. Dieses führt zu einer
+Spannungsvervielfachung.
+\par
+Die SPEED~2 Module bestehen aus je 6
+Kondensatoren\footnote{Maxwell Laboratories, San Diego, USA
+(\url{http://www.maxwell.com/}). Jeder Kondensator besteht
+wiederum aus 2 Packs mit je 3 Kondensatorelementen. Die Packs sind
+in Serie, die Kondensatorelemente parallel geschaltet. Ein
+Kondensatorelement ist ein niederinduktiv angeschlossener
+Folienkondensator. Die Spannungsfestigkeit wird durch eine
+Ölfüllung verbessert. Herstellergarantie: \wert{40}{kV}.} die mit
+drei Funkenstrecken in Serie geschaltet werden. Die
+Spannungsfestigkeit der Kondensatoren von \wert{50}{kV} führt zu
+einer Grenze für die erreichbare Gesamtspannung.
+\par
+Die Funkenstrecken geben durch ihren Arbeitsbereich eine untere
+Grenze für die Gesamtspannung. Der Druck in den Funkenstrecken
+kann nicht beliebig abgesenkt werden, weil nach einer Entladung
+ein Teil der Rückstände mit einem Luftstrom bei diesem Druck aus
+den Funkenstrecken transportiert werden. Nur die flache Kennlinie
+(Ver"-zö"-ge"-rungs"-zeit gegen angelegte Spannung) dieses
+Funkenstreckentyps erlaubt die einfache Variation der Spannung des
+Treibers im Bereich von \wert{150}{kV} bis \wert{300}{kV}.
+\par
+Die Abbildung \vref{fig:modul} zeigt die Schaltung eines
+Marx-Moduls von SPEED~2.
+\par
+Die eingezeichnete Induktivität L (lange, hochspannungsfeste Spule
+ohne Kern) ist nur in einem der 40 Module bestückt, über sie
+fließt der Ladestrom der Kondensatoren. Bei der Entladung über den
+Plasmafokus fließt nur ein kleiner Teil des Stromes durch die
+Spule.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C3-05}}
+  \caption{Aufbau der Batterie von SPEED~2 (maßstabsgetreu, Details vereinfacht)}
+  \label{fig:aufbau}
+\end{figure}
+%
+\par
+Die Abbildung \vref{fig:aufbau} zeigt die räumliche Anordnung der 40
+Module des Treibers. Der Hauptkollektor, die Vorkollektoren und die
+Leitungen zu den einzelnen Modulen sind niederinduktiv als Bandleiter
+ausgeführt.
+\par
+Die große Anzahl der parallelgeschalteten Module führt zur der geringen
+Gesamtinduktivität und zu dem großen Maximalstrom.
+\par
+Daneben hat die Parallelschaltung einen wichtigen Aspekt für den regelmäßigen
+Experimentierbetrieb. Die Anlage kann auch dann betrieben werden, wenn einzelne
+Module ausgefallen sind. In den Meßreihen macht sich dieses durch leicht
+veränderte Bankenergieen bei gleicher Ladespannung bemerkbar. Die geringen
+Änderungen der Bankenergie müssen hingenommen werden, wenn nicht, bei Verzicht
+auf die maximal mögliche Energie, ein Teil der Module als Ersatzmodule
+bereitgehalten werden.
+\par
+Da sich beim Abschalten, die Induktivität im gleichen Verhältnis
+vergrößert, wie die Kapazität sich verringert, wird die
+Stromanstiegszeit dabei nicht verändert. Dieses wurde auch
+ausgenutzt, um die Bankenergie als Betriebsparameter zu variieren.
+Damit die Symmetrie der Entladung nicht gestört wird, wurden die
+Module möglichst symmetrisch verteilt geschaltet.
+%
+\beginsubsection{Plasmafokus SPEED~2}
+\label{sec:plasmafokus}
+%
+Die Last dieses Hochleistungstreibers bildet ein Plasmafokus. Die verwendete
+Elektrodenkonfiguration ist in der Abbildung \vref{fig:elektroden} dargestellt.
+In der Abbildung ist die Anode nach unten abgeschnitten. Die Gesamtlänge der
+Anode beträgt ca. \wert{30}{cm}.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C3-02}}
+  \caption{Elektrodenkonfiguration von SPEED~2 (maßstabsgetreu,
+     Details vereinfacht). Elektroden: Kupfer, Isolator: \AlO beschichtetes
+     Quarzglas.}
+  \label{fig:elektroden}
+\end{figure}
+%
+\par
+Die Kathodenstäbe aus Kupfer dienen bei dieser Geometrie nicht als
+Rück"-lei"-ter für den Strom. Sie erzeugen nur das notwendige
+elektrische Feld im Bereich des Isolators für eine homogene
+Ausbildung der Gleitentladung über der Isolatoroberfläche. Ohne
+diese Stäbe kommt es zu keiner effizienten Pinchbildung aufgrund
+der schlechten Zündung.
+\par
+Die Oberfläche des \wert{5}{mm} dicken Quarzglasisolators ist
+\wert{0.2}{mm} dick mit \AlO\ beschichtet. Diese Beschichtung hat das
+Zündverhalten bei großen Energiedichten gegenüber unbeschichteten
+Isolatoren deutlich verbessert. Die Problematik der Isolatoren wird in
+dem Abschnitt \vref{iso:problem} ausführlich beschrieben.
+\par
+Die Anode aus Kupfer ist auf der Achse durchbohrt. Durch diese
+\wert{8}{mm} Bohrung wird ein Injektionsgas in den Bereich der
+Pinchsäule gegeben. Den Ablauf der Entladung in dieser speziellen
+Situation zeigt die Abbildung \vref{fig:pinchbildung}.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C3-01}}
+  \caption{Schichtentwicklung und Gasinjektion bei SPEED~2 (schematisch).
+  Maßstabsgetreu ist ein Bild einer Röntgenabsorptionsmessung
+  des Argongases in die Zeichnung montiert. Das Blickfeld beschneidet das
+  Bild des Gasstroms links und oben.}
+  \label{fig:pinchbildung}
+\end{figure}
+%
+\par
+Der zeitliche Ablauf einer Entladung mit Gasinjektion: Das
+Entladungsgefäß wird mit einer Deuterium-Gasfüllung von typisch
+\wert{5}{hPa} vorbereitet. Über das Ventil wird das Injektionsgas,
+typisch Neon oder Argon, eingeblasen. Nach einer Zeitverzögerung im
+ms-Bereich, damit das Gas durch die Bohrung austreten kann, wird die
+Spannung angelegt. Es bildet sich die Gleitentladung über der
+Isolatoroberfläche (1). Die Plasmaschicht hebt ab  (2) und wird durch
+magnetische Kräfte komprimiert (3). Dabei wird zuerst nur Deuteriumgas,
+dann auch im Bereich des Fokus Injektionsgas, ionisiert und
+komprimiert.
+\par
+Es ist nicht möglich, mit einer statischen Fül"-lung eines
+Gasgemisches zu beginnen, weil nur in reinem Wasserstoff- oder
+Deuteriumgas die Schichtbildung am Isolator funktioniert.
+Beimischungen von wenigen Volumenprozent eines schweren Gases
+verhindern eine effektive Entladung.
+\par
+Die Gasinjektion wird von einem schnellen Magnetventil gesteuert. In
+der Arbeit von Doll \cite{doll:diplom} ist das Ventil und die
+Ansteuerungselektronik beschrieben. Im Vergleich zur ursprünglichen
+Version wurde die Schaltung mittlerweile leicht modifiziert:
+\par
+Eine kleine Kondensatorbatterie mit einer Kapazität von
+\wert{475}{$\mu$F} wird auf \wert{275}{V} aufgeladen. Geschaltet über
+einen Thyristor werden die Kondensatoren über die Spule des
+Magnetventils entladen, so daß ein Strompuls durch die Spule entsteht.
+\par
+Der Strom durch die Spule wurde mit einem Shunt zeitaufgelöst gemessen. Der
+Maximalstrom von \wert{59}{A} wird nach einer Anstiegszeit von \wert{1.3}{ms}
+erreicht. Danach fällt der Strom ab und erreicht nach \wert{4.6}{ms} seinen
+10\%-Wert.
+\par
+Aufgrund der mechanischen Trägheit und der Kraft der
+Rückstellfeder des Ventils, bewirkt der \wert{5.9}{ms} lange
+Strompuls eine \wert{15}{ms} lange Öffnung des Ventils. Diese Zeit
+wurde elektrisch gemessen. Ein Draht (\wert{\phi = 2}{mm}),
+isoliert geführt durch die Auslaßseite des Ventils auf den
+Ventilteller schließt über den Metallkörper des Ventils einen
+Stromkreis. Beim Herunterziehen des Ventiltellers, durch das
+Magnetfeld, wird der Kreis geöffnet. Bewegt sich der Teller
+zurück, so schließt sich der Stromkreis, aber nur für einen kurzen
+Moment (ca. \wert{0.5}{ms}), denn der Draht wird durch den Teller
+weggestossen.
+\par
+Ein Versuch, die Öffnungszeit optisch zu messen, mißlang. Es besteht
+keine direkte Sichtlinie auf den Kolben. Aufgrund der zu geringen
+Intensität, war das Messen des Streulichts durch das Ventil, mit dem
+vorhandenen Photomultiplier, nicht möglich.
+\par
+Die Gasmenge, die innerhalb der gesamten Öffnungszeit des Ventils in
+den Rezipienten strömt, ist leicht zu messen. Aufgrund des großen
+Volumens (\wert{193}{$\ell$}) erhöht sich der Druck nur gering (typisch
+\wert{0.5}{hPa}) bei der Injektion. Bei diesen niedrigen Drücken kann
+gut mit dem Gesetz für das ideale Gas gerechnet werden.
+\par
+Die Messungen wurden in Ab"-hän"-gig"-keit des Injektionsdrucks
+p(Inj.) und des Gases durchgeführt. Gefunden wurde für die Menge
+des Neons N(Ne) bzw. der Menge des Argons N(Ar) bei einer
+Injektion mit dem Injektionsdruck p(Ne) bzw. p(Ar):
+\begin{eqnarray*}
+  \rm{N(Ne)} =
+  & 1.06 \cdot 10^{-8} \,\rm \frac{mol}{Pa} \cdot \rm{p(Ne)}
+  &\quad ,
+  \\
+  \rm{N(Ar)} =
+  & 9.09 \cdot 10^{-9} \,\rm \frac{mol}{Pa} \cdot \rm{p(Ar)}
+  &\quad .
+\end{eqnarray*}
+Die Abweichungen von der Linearität wurden im Bereich
+\ewert{3.5}{5}{Pa} bis \ewert{9.5}{5}{Pa} zu maximal \wert{\pm 5}{\%}
+bestimmt. Die Einstellung des Injektionsdrucks an einem handelsüblichen
+Druckreduzierventil mit einer \wert{0.5}{bar} Skala, war vermutlich die
+Ursache für die Abweichung von der Linearität. Der Druck wird am
+Reduzierventil bei geschlossenem Magnetventil eingestellt. Beide
+Ventile sind mit einem \wert{3.0}{m} langen Schlauch verbunden, der als
+Vorratsgefäß für den Gaspuls dient. (Alle Schläuche sind hier aus
+Polyethylen, Innendurchmesser \wert{6}{mm}, \wert{1}{mm} Wandstärke.)
+\par
+Die Gesamtmenge des Injektionsgases ist aber nicht entscheidend. Die
+Entladung muß gezündet werden, bevor sich das Injektionsgas im
+Rezipienten verteilt hat, oftmals wird sogar gezündet, bevor das Ventil
+wieder geschlossen ist. Die gemessene Gasmenge dient hier nur zur
+Übertragung der Messung von Argon auf Neon am Ende dieses Abschnitts.
+Zusammen mit der Öffnungszeit, dienen die Werte auch zur
+Plausibilitätskontrolle der folgenden Abschätzungen.
+\par
+Als Betriebsparameter wurde dazu in älteren Arbeiten
+\cite{maelzig:phd,lucas:diplom,roewe:phd} die
+Ver"-zö"-ge"-rungs"-zeit $\tau$ zwischen dem elektrischen
+Monitorsignal des Magnetventils, abgeleitet aus dem Spannungspuls
+zum Magneten, und dem Triggerpuls zu den HV-Trigger des Treibers
+angegeben (vgl. dazu Abbildung \vref{fig:triggerung}, {\bf ZG}).
+Diese Ver"-zö"-ge"-rungs"-zeit erhält aber auch die Zeit für das
+Öffnen des Ventils, die Zeit für das Durchströmen des Schlauchs
+vom Ventil zur Anode und die Verzögerungszeiten in den
+HV-Triggern.
+\par
+Hier in der Arbeit wird eine effektive Injektionszeit \teff
+angegeben. Sie berechnet sich für den aktuellen Aufbau der Anlage
+aus der Ver"-zö"-ge"-rungs"-zeit $\tau$ über
+\begin{eqnarray*}
+  \tau \rm _{eff}(Ne) =
+  & \tau - 4.5\,\rm ms
+  &\quad ,
+  \\
+  \tau \rm _{eff}(Ar) =
+  & \tau - 5.5\,\rm ms
+  &\quad .
+\end{eqnarray*}
+Die effektive Injektionszeit \teff = 0 ist genau die minimale
+Ver"-zö"-ge"-rungs"-zeit an, ab der die Entladungen durch ihre
+Rönt"-gen"-strah"-lung auf den Diagnostiken sichtbar werden. Bei
+kleineren Ver"-zö"-ge"-rungs"-zei"-ten (entsprechend negativen
+effektiven Injektionszeiten) ist kaum schweres Gas in dem
+Pinchplasma, das als Strahlungsquelle dienen könnte. Die Zeiten
+wurden experimentell für beide Injektionsgase bestimmt. Im
+wesentlichen ist es die Zeit für das Durchströmen des Schlauches,
+dabei sind die leichteren Neon-Atome schneller. Weil der Offset
+von der Schlauchlänge abhängig ist, muß beim Vergleich mit älteren
+Arbeiten berücksichtigt werden, daß die Schlauchlänge von
+\wert{0.35}{m} \cite{doll:diplom} über \wert{1.0}{m}
+\cite{lucas:diplom} auf \wert{1.5}{m} verlängert wurde. Die
+Verlängerungen waren notwendig geworden, da es immer wieder
+Probleme mit Gleitentladungen entlang des Schlauches zum Ventil
+gab.
+\par
+Mit der effektiven Injektionszeit \teff ist ein guter Betriebsparameter
+gefunden, aber für weitere Auswertungen ist die Menge der
+Injektionsgasteilchen im Pinch interessant. Diese ist aber meßtechnisch
+schwer zugänglich. In der Arbeit von Mälzig \cite{maelzig:phd} ist eine
+Messung beschrieben:
+\par
+Über eine Röntgenabsorptionsmessung konnten für einen Betriebspunkt Werte
+ermittelt werden. Das in Abbildung \vref{fig:pinchbildung} montierte Photo
+zeigt diese Messung. Der Gasstrom ist darauf als Schwärzung sichtbar.
+\par
+Die Ver"-zö"-ge"-rungs"-zeit $\tau$ beträgt bei der Aufnahme
+\wert{6.5}{ms}, woraus sich die Injektionszeit \teff zu
+\wert{4.5}{ms} abschätzen läßt (Schlauchlänge \wert{1.0}{m}). Der
+Argondruck ist nicht angegeben, damals wurde oft mit
+\ewert{4.5}{5}{Pa} gearbeitet, vermutlich auch bei diesem
+Experiment.
+\par
+Für vier verschiedene Höhen über der Anode sind daraus die Dichten n
+des Argongases und die Halbwertsbreite d des Gasstroms bestimmt worden.
+Da die Dichten aus der Absorption berechnet wurden, unter der Annahme n
+= const. über d, läßt sich in guter Näherung die Menge des Argongases
+über der Zylindervolumen bestimmen. Es ergeben sich mit den Werte aus
+\cite{maelzig:phd} die Gasmengen:
+%
+\par
+\begin{table}[H]
+  \center
+  \begin{tabular}{|r|c|c|c|}
+      \hline
+    z-Bereich \ \  & Dichte n & Halbwertsbreite d & Gasmenge \\
+      \hline
+    0   - \wert{2.5}{mm}\  & \ewert{4.1}{23}{m$^{-3}$} & \wert{12.2}{mm} &  \ewert{1.2}{17}{} \\
+    2.5 - \wert{5.5}{mm}\  & \ewert{2.9}{23}{m$^{-3}$} & \wert{12.6}{mm} &  \ewert{1.1}{17}{} \\
+    5.5 - \wert{8.5}{mm}\  & \ewert{1.9}{23}{m$^{-3}$} & \wert{14.6}{mm} &  \ewert{9.5}{16}{} \\
+    8.5 - \wert{11.5}{mm}\ & \ewert{1.4}{23}{m$^{-3}$} & \wert{15.4}{mm} &  \ewert{7.8}{16}{} \\
+      \hline
+  \end{tabular}
+  \caption{Injektionsgasmenge (Teilchenanzahl) über der Anode}
+  \label{tab:gasmengen:maelzig}
+\end{table}
+%
+\par
+In der Summe ergeben sich \ewert{6.7}{-7}{mol} in dem \wert{11.5}{mm}
+hohen Gaskegel. Die Gesamtmenge des injizierten Argons, unter den
+angenommenen Betriebsparametern, wurde mit \ewert{3.7}{-3}{mol}
+gemessen. Die Teilmenge von 1/5500 innerhalb der ersten \wert{2}{ms}
+von \wert{15}{ms} Öffnungszeit, innerhalb eines begrenzten Volumens,
+erscheint möglich.
+\par
+Die Pinchsäule ist aber, gerade im SCM, nicht nur \wert{11}{mm}
+lang. Aus Mangel an besseren Werten wird daher die mittlere
+Liniendichte für Abschätzungen benutzt. Sie ergibt sich zu n =
+\ewert{3.5}{19}{m$^{-1}$}. Die Liniendichte wird vermutlich
+proportional zum Injektionsdruck p(Ar) sein, weil die
+Gesamtgasmenge diese Proportionalität auch gut erfüllt. Die
+Ab"-hän"-gig"-keit von der Injektionszeit ist sehr unsicher. Für
+erste Ab"-schät"-zun"-gen wird auch dabei die Proportionalität
+angenommen. Die Liniendichte für Argon läßt sich also aus den
+Betriebsparametern mit
+\begin{displaymath}
+  \rm n(Ar) = 3.9 \cdot 10^{16} \, \rm m^{-1} \cdot \rm \frac{p(Ar)}{Pa} \cdot \frac{\tau_{\rm eff}}{s}
+\end{displaymath}
+abschätzen. Die Abschätzung für Neon erfolgt über das oben beschriebene
+Verhältnis der Gesamtgasmengen:
+\begin{displaymath}
+  \rm n(Ne) = 4.5 \cdot 10^{16} \, \rm m^{-1} \cdot \rm \frac{p(Ne)}{Pa} \cdot \frac{\tau_{\rm eff}}{s}
+\end{displaymath}
+\par
+Da dieser Zusammenhang auf einige unsichere Werte aufbaut, kann er nur
+im Sinne einer ersten Abschätzung dienen. Eine bessere Kenntnis des
+Gasstroms ist auf jeden Fall wünschenswert, aber experimentell
+aufwendig.
+\par
+Dazu kommt auch noch das Problem, daß sich die Bohrung in der Anode für
+die Gasinjektion bei den Entladungen verändert. Die Bohrung hat sich im
+Laufe von ca. 2000 Entladungen auf mehr als den doppelten Durchmesser
+erweitert und wurde auch leicht asymmetrisch. Werden auch Entladungen
+ohne Gasinjektion durchgeführt, so wird auch eine deutliche Verengung
+der Bohrung ca. \wert{5}{cm} innerhalb der Anode beobachtet. Das
+Material, das im oberen Bereich abgetragen wird, wandert ohne
+Gasinjektion in die Bohrung hinein.
+\par
+Zwei Schnitte durch die Anode in Abbildung \vref{fig:bohrung}
+zeigen die Ver"-än"-de"-rung"-en der Bohrung. Die Anordnung der
+Diagnostiken relativ zu diesen Schnitten kann der Abbildung
+\vref{fig:Richtung:Diagnostiken} entnommen werden.
+\par
+Erfolglos wurde versucht, den Gasstrom durch ein Kupferrohr
+(Außendurchmesser \wert{8}{mm}, Wandstärke \wert{1}{mm})
+konzentriert zu halten. Dieses Rohr verlor durch Erosion pro
+Entladung ca. \wert{1}{mm} seiner Länge, bis es ca. \wert{20}{mm}
+in der Anode verborgen war und nicht mehr durch die Entladung
+abgetragen wurde.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C3-03}}
+  \caption{Schnitte durch die Anode von SPEED~2 nach der Entladung Nummer 12.646}
+  \label{fig:bohrung}
+\end{figure}
+%
+%
+\beginsubsection{Trigger von Treiber und Diagnostik}
+%
+\par
+Die Abbildung \vref{fig:triggerung} zeigt den komplexen Ablauf in der
+Ansteuerung der 40 Marx-Module des Treibers und der verschiedenen Diagnostiken
+zur Untersuchung des entstehenden Plasmas.
+\par
+Die Kürzel in der Abbildung bezeichnen die eingesetzten Geräte:
+ {\bf DSO}: Gould 4074 (4 Kanal, \wert{100}{MHz} Bandbreite,
+\wert{400}{MS/s}), Gould Electronics, Essex, England
+(\url{http://www.gould.co.uk/});
+ {\bf HP}: Pulse Generator 8011A,
+Hewlett Packard, Böblingen (\url{http://www.tmo.hp.com/});
+ {\bf HV}: HV-Puls Generator für MCP
+\cite{sopkin:92}, Institut für Spektroskopie, Troitzk, Rusland.
+ {\bf MA}: H.V. Trigger Amplifier 40107, Maxwell Laboratories, San
+Diego, USA;
+ {\bf SL}: H.V. Trigger Generator 40108, Maxwell
+Laboratories;
+ {\bf ST}: Pulse Generator Model DG 535 (Options 01, 02),
+Stanford Research Systems, Sunnyvale, USA (\url{http://www.srsys.com/});
+ {\bf VS}: Ventilsteuerung,
+Photoblitz-Kondensatoren über Thyristor geschaltet;
+ {\bf ZG}: Puls Generator
+\cite{maelzig:phd} als Verstärker und Schutz des ST vor elektrischen
+Störungen.
+\par
+Alle Impulse werden über Koaxialleitungen mit 50~$\Omega$ Impedanz
+über"-tra"-gen. Die Signallaufzeiten wurden ermittelt, bzw. die
+Leitungslängen wurden entsprechend den Erfordernissen abgestimmt.
+\par
+Nach Aufladung der Kondensatorbatterie (Ladezeit typisch
+\wert{12}{s}), erfolgt durch Tastendruck die Triggerung der
+Geräte. Der Tastendruck löst das schnelle Magnetventil aus, über
+ein Monitorsignal wird dann der zentrale Pulsgenerator {\bf ST}
+ausgelöst.
+\par
+Ein Puls läuft durch den Pulser {\bf ZG}, als Verstärker und
+Schutz des {\bf ST}, in die Triggerhierarchie des Treibers.
+Mehrere kommerzielle Impulsverstärker {\bf MA}, {\bf SL} erzeugen
+daraus die notwendigen 40 Hochspannungspulse zur gleichzeitigen
+(innerhalb von \wert{10}{ns}) Triggerung der 120 Funkenstrecken in
+den Marx-Modulen.
+\par
+Die anderen Pulse des zentralen Pulsgenerators {\bf ST} steuern
+die zeitaufgelöst arbeitenden Diagnostiken an. Die scheinbar
+widersinnige Verwendung eines \wert{30}{V} Pulses und eines
+nachgeschalteten Dämpfers ist notwendig, damit der
+Signal-Rauschabstand an dieser speziellen Stelle ausreichend groß
+ist.
+\par
+Trotz der vielen Stufen in der Steuerung ist der Jitter mit ca.
+\wert{\pm 30}{ns} zwischen der Fokusentladung und einer Diagnostik
+gering.
+%
+\par
+\begin{figure}[H]
+  \center
+  \fbox{\importimage{C3-06}}
+  \caption{Triggerung der Batterie von SPEED~2 und der Diagnostiken.
+     Beschreibung der Kürzel im Text.}
+  \label{fig:triggerung}
+\end{figure}
+%
+\par
+Für eine genaue zeitliche Zuordnung werden von allen Diagnostiken
+Monitorsignale zusammen mit dem Spannungs- und Stromsignal der
+Entladung aufgezeichnet. Ausgelöst werden die zwei digitalen
+Speicheroszilloskope ({\bf DSO}) durch einen Spannungspuls, der
+über einen kapazitiven Spannungsteiler von einem der
+Hochspannungspulse aus einem der {\bf SL} Generatoren gewonnen
+wird.

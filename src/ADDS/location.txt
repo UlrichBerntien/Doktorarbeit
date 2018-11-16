@@ -1,0 +1,14 @@
+ Volume in drive C has no label.
+ Volume Serial Number is B870-C4B3
+
+ Directory of C:\TeX\tex\latex\base\local
+
+13.05.99  16:19         <DIR>          .
+13.05.99  16:19         <DIR>          ..
+14.08.97  21:26                      0 texsys.cfg
+07.07.99  22:30                 20.813 ub_artcl.cls
+04.08.98  22:26                    149 ub_artcl.sty
+04.08.98  22:25                 12.046 ub_lttr.cls
+04.08.98  22:25                    144 ub_lttr.sty
+               7 File(s)         33.152 bytes
+                          1.471.053.824 bytes free
