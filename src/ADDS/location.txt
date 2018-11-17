@@ -1,3 +1,6 @@
+Die Style-Dateien innerhalb der TeX Installation ablegen:
+
+
  Volume in drive C has no label.
  Volume Serial Number is B870-C4B3
 

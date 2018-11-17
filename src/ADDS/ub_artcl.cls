@@ -1,5 +1,5 @@
 %%%% UB Start
-%%   Änderungen
+%%   Ã„nderungen
 %%   neue Seitenstyle: freeheading, onlypagenumbers
 %%   Formeln und Figures werden kapitelweise numeriert
 %%%% UB End
